@@ -2,10 +2,17 @@ package com.example.touchtrack;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.net.wifi.ScanResult;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.VelocityTracker;
 import android.widget.TextView;
 import android.view.MotionEvent;
+
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
     @Override
     public boolean onTouchEvent(MotionEvent event){
         int action = event.getActionMasked();
@@ -30,39 +38,56 @@ public class MainActivity extends AppCompatActivity {
         float touch_size = event.getTouchMajor(0);
         float newX;
         float newY;
-
+        long ms;
+        String message = "";
 
         switch(action){
             case MotionEvent.ACTION_DOWN:
+                ms = System.currentTimeMillis();
                 x = event.getX();
                 y = event.getY();
-                long ms = System.currentTimeMillis();
+//                if(mVelocityTracker == null){
+//                    mVelocityTracker = VelocityTracker.obtain();
+//                }
+//                else{
+//                    mVelocityTracker.clear();
+//                }
+
+//                mVelocityTracker.addMovement(event);
                 position.setText("Time: " + Long.toString(ms));
                 position.append("\nX: " + x + " Y: " + y);
-                position.append("\n Pressure: " + pressure);
-                position.append("\n Size: "+ touch_size);
-                if(mVelocityTracker == null){
-                    mVelocityTracker = VelocityTracker.obtain();
+                position.append("\nPressure: " + pressure);
+                position.append("\nSize: "+ touch_size);
+                position.append("\nX original: " + x);
+                position.append("\nY original: " + y);
+
+                message = "New Swipe\n";
+                message += "time ms: " +  ms + " action: key down" + " X: " + x + " Y: " + y + " Pressure: " + pressure + " Size: " + touch_size;
+                try{
+                    OutputStreamWriter outputStreamWriter = new OutputStreamWriter(openFileOutput("recordlog.txt", MODE_APPEND));
+                    outputStreamWriter.write( message + "\n");
+                    outputStreamWriter.close();
                 }
-                else{
-                    mVelocityTracker.clear();
+                catch(IOException e){
+                    Log.e("Exception", "File write failed: "+ e.toString() );
                 }
-                mVelocityTracker.addMovement(event);
+                break;
+
             case MotionEvent.ACTION_MOVE:
                 newX = event.getX();
                 newY = event.getY();
-                float vx = mVelocityTracker.getXVelocity();
-                float vy = mVelocityTracker.getYVelocity();
+//                float vx = mVelocityTracker.getXVelocity();
+//                float vy = mVelocityTracker.getYVelocity();
                 ms = System.currentTimeMillis();
 
-                mVelocityTracker.addMovement(event);
-                mVelocityTracker.computeCurrentVelocity(100);
+//                mVelocityTracker.addMovement(event);
+//                mVelocityTracker.computeCurrentVelocity(100);
                 position.setText("Time: " + Long.toString(ms));
                 position.append("\nX: " + newX + " Y: " + newY);
                 position.append("\nPressure: " + pressure);
                 position.append("\nSize: "+ touch_size);
-                position.append("\nX velocity: " + vx);
-                position.append("\nY velocity: " + vy);
+//                position.append("\nX velocity: " + vx);
+//                position.append("\nY velocity: " + vy);
                 position.append("\nX original: " + x);
                 position.append("\nY original: " + y);
                 //Predicting Direction
@@ -89,14 +114,34 @@ public class MainActivity extends AppCompatActivity {
                 else{
                     direction = "null";
                 }
-                position.append("\nPredicted direction: " + direction);
+//                position.append("\nPredicted direction: " + direction);
+                // Remove redundant
+                message = "time ms: " + ms + " action: key move" + " X: " + newX + " Y: " + newY + " Pressure: " + pressure + " Size: " + touch_size + " direction: " + direction;
+                try{
+                    OutputStreamWriter outputStreamWriter = new OutputStreamWriter(openFileOutput("recordlog.txt", MODE_APPEND));
+                    outputStreamWriter.write( message + "\n");
+                    outputStreamWriter.close();
+                }
+                catch(IOException e){
+                    Log.e("Exception", "File write failed: "+ e.toString() );
+                }
+
                 break;
 
             case MotionEvent.ACTION_UP:
                 position.setText("");
-                break;
-            case MotionEvent.ACTION_CANCEL:
-                mVelocityTracker.recycle();
+                ms = System.currentTimeMillis();
+                newX = event.getX();
+                newY = event.getY();
+                message = "time ms: " +  ms + " action: key up" + " X: " + newX + " Y: " + newY + " Pressure: " + pressure + " Size: " + touch_size;
+                try{
+                    OutputStreamWriter outputStreamWriter = new OutputStreamWriter(openFileOutput("recordlog.txt", MODE_APPEND));
+                    outputStreamWriter.write( message + "\n");
+                    outputStreamWriter.close();
+                }
+                catch(IOException e){
+                    Log.e("Exception", "File write failed: "+ e.toString() );
+                }
                 break;
         }
         return true;
