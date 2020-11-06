@@ -33,4 +33,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.147" />
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="275dp"
+        android:layout_height="264dp"
+        android:foregroundGravity="center_vertical|center|center_horizontal"
+        app:srcCompat="@drawable/square_trans"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="184dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
