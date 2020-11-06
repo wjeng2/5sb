@@ -207,13 +207,15 @@ public class MainActivity extends AppCompatActivity {
 //        mPaint.setStrokeJoin(Paint.Join.ROUND);
 //        mPaint.setStrokeCap(Paint.Cap.ROUND);
 //        mPaint.setStrokeWidth(12);
-        long ms;
-        String message = "";
 
 //        mEmboss = new EmbossMaskFilter(new float[] { 1, 1, 1 },
 //                0.4f, 6, 3.5f);
 //
 //        mBlur = new BlurMaskFilter(8, BlurMaskFilter.Blur.NORMAL);
+
+        long ms;
+        String message = "";
+
 
 
         switch (action) {
@@ -224,14 +226,13 @@ public class MainActivity extends AppCompatActivity {
                 ms = System.currentTimeMillis();
                 x = event.getX();
                 y = event.getY();
-//                if(mVelocityTracker == null){
-//                    mVelocityTracker = VelocityTracker.obtain();
-//                }
-//                else{
-//                    mVelocityTracker.clear();
-//                }
+                if (mVelocityTracker == null) {
+                    mVelocityTracker = VelocityTracker.obtain();
+                } else {
+                    mVelocityTracker.clear();
+                }
 
-//                mVelocityTracker.addMovement(event);
+                mVelocityTracker.addMovement(event);
                 position.setText("Time: " + Long.toString(ms));
                 position.append("\nX: " + x + " Y: " + y);
                 position.append("\nPressure: " + pressure);
@@ -256,20 +257,21 @@ public class MainActivity extends AppCompatActivity {
                 newY = event.getY();
                 // mv.touch_move(newX, newY);
 //                mv.invalidate();
-//                float vx = mVelocityTracker.getXVelocity();
-//                float vy = mVelocityTracker.getYVelocity();
+                float vx = mVelocityTracker.getXVelocity();
+                float vy = mVelocityTracker.getYVelocity();
                 ms = System.currentTimeMillis();
 
-//                mVelocityTracker.addMovement(event);
-//                mVelocityTracker.computeCurrentVelocity(100);
+                mVelocityTracker.addMovement(event);
+                mVelocityTracker.computeCurrentVelocity(100);
                 position.setText("Time: " + Long.toString(ms));
                 position.append("\nX: " + newX + " Y: " + newY);
                 position.append("\nPressure: " + pressure);
                 position.append("\nSize: " + touch_size);
-//                position.append("\nX velocity: " + vx);
-//                position.append("\nY velocity: " + vy);
+                position.append("\nX velocity: " + vx);
+                position.append("\nY velocity: " + vy);
                 position.append("\nX original: " + x);
                 position.append("\nY original: " + y);
+
                 //Predicting Direction
                 String direction = "null";
                 float diffx = newX - x;
@@ -292,11 +294,10 @@ public class MainActivity extends AppCompatActivity {
                 }
                 position.append("\nPredicted direction: " + direction);
 
-                SwipeData sd = new SwipeData(ms, newX, newY, touch_size, pressure, 0, 0);
-
-                System.out.println(gson.toJson(sd));
+                SwipeData sd = new SwipeData(ms, newX, newY, touch_size, pressure, vx, vy);
                 sdl.add(sd);
                 System.out.println(sdl.size());
+                System.out.println(gson.toJson(sd));
 
 
                 message = "time ms: " + ms + " action: key move" + " X: " + newX + " Y: " + newY + " Pressure: " + pressure + " Size: " + touch_size + " direction: " + direction;
@@ -313,34 +314,31 @@ public class MainActivity extends AppCompatActivity {
             case MotionEvent.ACTION_UP:
                 //                mv.touch_up();
                 //                mv.invalidate();
-
-                //                mVelocityTracker.recycle();
-                //                position.setText("");
-                //                try (Writer writer = new FileWriter("./Output.json")) {
-
+                mVelocityTracker.recycle();
+                mVelocityTracker = null;
                 String sdl_json_str = gson.toJson(sdl);
                 System.out.println("sdl_json_str: " + sdl_json_str);
-                //                } catch (Exception e){
-                //                    e.printStackTrace();
-                //                }
 
                 position.setText("");
                 ms = System.currentTimeMillis();
                 newX = event.getX();
                 newY = event.getY();
-                message = "time ms: " + ms + " action: key up" + " X: " + newX + " Y: " + newY + " Pressure: " + pressure + " Size: " + touch_size;
+
                 try {
-                    OutputStreamWriter outputStreamWriter = new OutputStreamWriter(openFileOutput("recordlog.txt", MODE_APPEND));
-                    outputStreamWriter.write(message + "\n");
+                    OutputStreamWriter outputStreamWriter = new OutputStreamWriter(openFileOutput("swipe" + ms + ".json", MODE_APPEND));
+                    outputStreamWriter.write(sdl_json_str + "\n");
                     outputStreamWriter.close();
                 } catch (IOException e) {
                     Log.e("Exception", "File write failed: " + e.toString());
                 }
+
+
                 break;
 
             case MotionEvent.ACTION_CANCEL:
                 mVelocityTracker.recycle();
-//                position.setText("");
+                mVelocityTracker = null;
+                position.setText("");
         }
         return true;
 
