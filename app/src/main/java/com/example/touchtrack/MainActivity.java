@@ -9,6 +9,7 @@ import android.graphics.EmbossMaskFilter;
 import android.graphics.MaskFilter;
 import android.graphics.Path;
 import android.net.wifi.ScanResult;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.VelocityTracker;
@@ -23,8 +24,14 @@ import android.view.MotionEvent;
 
 import com.google.gson.*;
 
+import java.io.BufferedReader;
 import java.io.FileWriter;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
 import java.io.Writer;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -332,6 +339,7 @@ public class MainActivity extends AppCompatActivity {
                     Log.e("Exception", "File write failed: " + e.toString());
                 }
 
+                new SendJson().execute(sdl_json_str);
 
                 break;
 
@@ -343,6 +351,76 @@ public class MainActivity extends AppCompatActivity {
         return true;
 
     }
+
+    // https://stackoverflow.com/questions/6053602/what-arguments-are-passed-into-asynctaskarg1-arg2-arg3
+    class SendJson extends AsyncTask<String, String, String> {
+
+        @Override
+        protected String doInBackground(String... params) {
+
+            System.out.println("Sending request to echo server " + params[0]);
+
+            String serverReply = "";
+//            try  {
+//                java.util.Scanner s = new java.util.Scanner(
+//                        new java.net.URL(
+//                                "https://postman-echo.com/post")
+//                                .openStream(), "UTF-8")
+//                        .useDelimiter("\\A");
+//                serverReply = s.next();
+//                System.out.println("Sent request to echo server, reply is" + serverReply);
+//            } catch (java.io.IOException e) {
+//                e.printStackTrace();
+//            }
+
+            ////////
+
+            URL url = null;
+            HttpURLConnection con = null;
+
+            try {
+                url = new URL("https://postman-echo.com/post");
+                con = (HttpURLConnection)url.openConnection();
+                con.setRequestMethod("POST");
+                con.setRequestProperty("Content-Type", "application/json; utf-8");
+                con.setRequestProperty("Accept", "application/json");
+                con.setDoOutput(true);
+                String jsonInputString = params[0];
+                try(OutputStream os = con.getOutputStream()) {
+                    byte[] input = jsonInputString.getBytes("utf-8");
+                    os.write(input, 0, input.length);
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            System.out.println("Json sent, length " + params[0].length());
+
+            try (BufferedReader br = new BufferedReader(
+                new InputStreamReader(con.getInputStream(), "utf-8"))) {
+                StringBuilder response = new StringBuilder();
+                String responseLine = null;
+                while ((responseLine = br.readLine()) != null) {
+                    response.append(responseLine.trim());
+                }
+                serverReply = response.toString();
+                System.out.println(serverReply);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+
+            return serverReply;
+        }
+
+        @Override
+        protected void onPostExecute(String serverReply) {
+            super.onPostExecute(serverReply);
+
+            Log.e("*****Server Reply*****:", serverReply+"");
+        }
+    }
+
 
 
 }
