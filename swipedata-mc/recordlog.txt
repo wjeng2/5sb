@@ -1,0 +1,683 @@
+New Swipe
+time ms: 1605504192243 action: key down X: 200.60976 Y: 468.0 Pressure: 0.039215688 Size: 20.030489
+time ms: 1605504192416 action: key move X: 232.82285 Y: 464.63773 Pressure: 0.121568635 Size: 20.030489 direction: right
+time ms: 1605504192464 action: key move X: 319.05963 Y: 467.5382 Pressure: 0.12941177 Size: 30.045734 direction: right
+time ms: 1605504192482 action: key move X: 462.1679 Y: 482.109 Pressure: 0.12941177 Size: 30.045734 direction: right
+time ms: 1605504192499 action: key move X: 494.74072 Y: 484.68704 Pressure: 0.13333334 Size: 30.045734 direction: right
+time ms: 1605504192514 action: key move X: 521.643 Y: 484.30548 Pressure: 0.14117648 Size: 30.045734 direction: right
+time ms: 1605504192530 action: key move X: 542.41254 Y: 483.5091 Pressure: 0.14117648 Size: 20.030489 direction: right
+time ms: 1605504192546 action: key move X: 557.8855 Y: 484.0 Pressure: 0.14901961 Size: 20.030489 direction: right
+time ms: 1605504192563 action: key move X: 580.0851 Y: 482.50848 Pressure: 0.15686275 Size: 20.030489 direction: right
+time ms: 1605504192579 action: key move X: 595.07416 Y: 481.5138 Pressure: 0.16470589 Size: 20.030489 direction: right
+time ms: 1605504192595 action: key move X: 603.10864 Y: 482.0 Pressure: 0.16470589 Size: 20.030489 direction: right
+time ms: 1605504192612 action: key move X: 609.75824 Y: 483.4881 Pressure: 0.16078432 Size: 20.030489 direction: right
+time ms: 1605504192628 action: key move X: 611.8296 Y: 485.985 Pressure: 0.14117648 Size: 20.030489 direction: right
+time ms: 1605504192644 action: key move X: 615.87195 Y: 487.0 Pressure: 0.08235294 Size: 20.030489 direction: right
+New Swipe
+time ms: 1605504193552 action: key down X: 677.0579 Y: 506.0 Pressure: 0.12941177 Size: 20.030489
+time ms: 1605504193664 action: key move X: 669.9919 Y: 525.13367 Pressure: 0.15294118 Size: 20.030489 direction: down
+time ms: 1605504193688 action: key move X: 665.3044 Y: 543.2303 Pressure: 0.15294118 Size: 20.030489 direction: down
+time ms: 1605504193716 action: key move X: 653.8558 Y: 589.4827 Pressure: 0.14509805 Size: 20.030489 direction: down
+time ms: 1605504193735 action: key move X: 646.35315 Y: 616.4694 Pressure: 0.14117648 Size: 20.030489 direction: down
+time ms: 1605504193751 action: key move X: 641.25476 Y: 638.4717 Pressure: 0.13333334 Size: 20.030489 direction: down
+time ms: 1605504193764 action: key move X: 637.8876 Y: 657.9914 Pressure: 0.121568635 Size: 20.030489 direction: down
+time ms: 1605504193777 action: key move X: 635.46594 Y: 673.28186 Pressure: 0.1137255 Size: 20.030489 direction: down
+time ms: 1605504193794 action: key move X: 636.936 Y: 687.7897 Pressure: 0.1137255 Size: 20.030489 direction: down
+time ms: 1605504193811 action: key move X: 635.4472 Y: 705.23193 Pressure: 0.10196079 Size: 20.030489 direction: down
+time ms: 1605504193827 action: key move X: 638.9107 Y: 728.1713 Pressure: 0.09019608 Size: 20.030489 direction: down
+time ms: 1605504193843 action: key move X: 637.939 Y: 744.73364 Pressure: 0.09019608 Size: 20.030489 direction: down
+time ms: 1605504193859 action: key move X: 636.43744 Y: 764.4439 Pressure: 0.08627451 Size: 20.030489 direction: down
+time ms: 1605504193876 action: key move X: 635.4456 Y: 775.8019 Pressure: 0.08235294 Size: 20.030489 direction: down
+time ms: 1605504193892 action: key move X: 635.9329 Y: 789.86694 Pressure: 0.08235294 Size: 20.030489 direction: down
+time ms: 1605504193908 action: key move X: 635.9329 Y: 799.36163 Pressure: 0.078431375 Size: 20.030489 direction: down
+time ms: 1605504193925 action: key move X: 635.9329 Y: 805.87177 Pressure: 0.078431375 Size: 20.030489 direction: down
+time ms: 1605504193941 action: key move X: 635.9329 Y: 809.3746 Pressure: 0.07450981 Size: 20.030489 direction: down
+time ms: 1605504193958 action: key move X: 635.9329 Y: 814.46576 Pressure: 0.07450981 Size: 20.030489 direction: down
+time ms: 1605504193974 action: key move X: 634.9299 Y: 817.0 Pressure: 0.04705883 Size: 20.030489 direction: down
+New Swipe
+time ms: 1605504194700 action: key down X: 650.97864 Y: 920.0 Pressure: 0.11764707 Size: 20.030489
+time ms: 1605504194779 action: key move X: 624.4198 Y: 920.0 Pressure: 0.13725491 Size: 20.030489 direction: left
+time ms: 1605504194797 action: key move X: 595.596 Y: 919.33746 Pressure: 0.121568635 Size: 20.030489 direction: left
+time ms: 1605504194820 action: key move X: 566.19025 Y: 917.6531 Pressure: 0.11764707 Size: 20.030489 direction: left
+time ms: 1605504194833 action: key move X: 515.605 Y: 914.9855 Pressure: 0.1137255 Size: 20.030489 direction: left
+time ms: 1605504194846 action: key move X: 476.1605 Y: 913.33496 Pressure: 0.10196079 Size: 20.030489 direction: left
+time ms: 1605504194861 action: key move X: 452.3014 Y: 912.5147 Pressure: 0.10196079 Size: 20.030489 direction: left
+time ms: 1605504194878 action: key move X: 420.13214 Y: 913.66077 Pressure: 0.098039225 Size: 20.030489 direction: left
+time ms: 1605504194894 action: key move X: 389.55655 Y: 916.03046 Pressure: 0.08627451 Size: 20.030489 direction: left
+time ms: 1605504194914 action: key move X: 346.7905 Y: 918.3577 Pressure: 0.08235294 Size: 20.030489 direction: left
+time ms: 1605504194926 action: key move X: 307.1211 Y: 919.9719 Pressure: 0.07450981 Size: 20.030489 direction: left
+time ms: 1605504194942 action: key move X: 274.33105 Y: 923.46075 Pressure: 0.07058824 Size: 30.045734 direction: left
+time ms: 1605504194960 action: key move X: 219.55615 Y: 923.49207 Pressure: 0.0627451 Size: 30.045734 direction: left
+time ms: 1605504194975 action: key move X: 209.7169 Y: 924.4748 Pressure: 0.058823533 Size: 20.030489 direction: left
+time ms: 1605504194993 action: key move X: 199.88689 Y: 924.0 Pressure: 0.054901965 Size: 20.030489 direction: left
+time ms: 1605504195008 action: key move X: 170.51828 Y: 930.0 Pressure: 0.054901965 Size: 20.030489 direction: left
+time ms: 1605504195026 action: key move X: 152.66673 Y: 929.6767 Pressure: 0.04705883 Size: 20.030489 direction: left
+time ms: 1605504195042 action: key move X: 142.0459 Y: 930.4912 Pressure: 0.03529412 Size: 20.030489 direction: left
+New Swipe
+time ms: 1605504195490 action: key down X: 171.52135 Y: 918.0 Pressure: 0.058823533 Size: 20.030489
+time ms: 1605504195600 action: key move X: 171.52135 Y: 908.0 Pressure: 0.08235294 Size: 20.030489 direction: up
+time ms: 1605504195617 action: key move X: 173.01913 Y: 866.189 Pressure: 0.09411766 Size: 20.030489 direction: up
+time ms: 1605504195637 action: key move X: 172.52438 Y: 830.19464 Pressure: 0.098039225 Size: 20.030489 direction: up
+time ms: 1605504195651 action: key move X: 173.18668 Y: 779.0628 Pressure: 0.10588236 Size: 20.030489 direction: up
+time ms: 1605504195666 action: key move X: 171.53304 Y: 740.1049 Pressure: 0.11764707 Size: 20.030489 direction: up
+time ms: 1605504195682 action: key move X: 169.04233 Y: 717.7566 Pressure: 0.12941177 Size: 20.030489 direction: up
+time ms: 1605504195698 action: key move X: 166.08012 Y: 686.7533 Pressure: 0.13333334 Size: 20.030489 direction: up
+time ms: 1605504195716 action: key move X: 161.43494 Y: 655.23926 Pressure: 0.15294118 Size: 20.030489 direction: up
+time ms: 1605504195731 action: key move X: 159.12773 Y: 630.37286 Pressure: 0.16078432 Size: 20.030489 direction: up
+time ms: 1605504195747 action: key move X: 157.51274 Y: 609.4419 Pressure: 0.15686275 Size: 20.030489 direction: up
+time ms: 1605504195764 action: key move X: 152.48868 Y: 586.15106 Pressure: 0.15686275 Size: 20.030489 direction: up
+time ms: 1605504195780 action: key move X: 149.98962 Y: 560.781 Pressure: 0.16862746 Size: 20.030489 direction: up
+time ms: 1605504195797 action: key move X: 147.07954 Y: 541.7437 Pressure: 0.1764706 Size: 20.030489 direction: up
+time ms: 1605504195821 action: key move X: 145.7573 Y: 526.0283 Pressure: 0.18823531 Size: 20.030489 direction: up
+time ms: 1605504195834 action: key move X: 145.44208 Y: 516.1656 Pressure: 0.18039216 Size: 20.030489 direction: up
+time ms: 1605504195848 action: key move X: 145.44208 Y: 508.52728 Pressure: 0.18823531 Size: 20.030489 direction: up
+time ms: 1605504195862 action: key move X: 145.44208 Y: 502.1506 Pressure: 0.1764706 Size: 20.030489 direction: up
+time ms: 1605504195879 action: key move X: 146.84822 Y: 495.79437 Pressure: 0.16862746 Size: 20.030489 direction: up
+time ms: 1605504195896 action: key move X: 147.44817 Y: 494.0 Pressure: 0.11764707 Size: 20.030489 direction: up
+New Swipe
+time ms: 1605504196294 action: key down X: 174.53049 Y: 484.0 Pressure: 0.16470589 Size: 20.030489
+time ms: 1605504196388 action: key move X: 205.9523 Y: 480.2092 Pressure: 0.1764706 Size: 20.030489 direction: right
+time ms: 1605504196410 action: key move X: 246.7252 Y: 477.62332 Pressure: 0.17254902 Size: 30.045734 direction: right
+time ms: 1605504196427 action: key move X: 292.72754 Y: 476.30786 Pressure: 0.1764706 Size: 30.045734 direction: right
+time ms: 1605504196437 action: key move X: 385.36142 Y: 478.152 Pressure: 0.18039216 Size: 30.045734 direction: right
+time ms: 1605504196454 action: key move X: 454.85904 Y: 482.62985 Pressure: 0.19215688 Size: 30.045734 direction: right
+time ms: 1605504196470 action: key move X: 501.75705 Y: 489.01385 Pressure: 0.20000002 Size: 30.045734 direction: right
+time ms: 1605504196488 action: key move X: 543.7801 Y: 495.97293 Pressure: 0.19607845 Size: 30.045734 direction: right
+time ms: 1605504196502 action: key move X: 575.6708 Y: 501.40115 Pressure: 0.20392159 Size: 30.045734 direction: right
+time ms: 1605504196520 action: key move X: 603.15405 Y: 503.4022 Pressure: 0.21176472 Size: 30.045734 direction: right
+time ms: 1605504196535 action: key move X: 618.2116 Y: 504.9824 Pressure: 0.21568629 Size: 30.045734 direction: right
+time ms: 1605504196552 action: key move X: 632.4357 Y: 505.68304 Pressure: 0.227451 Size: 30.045734 direction: right
+time ms: 1605504196569 action: key move X: 641.35944 Y: 506.49182 Pressure: 0.23529413 Size: 30.045734 direction: right
+time ms: 1605504196584 action: key move X: 647.84656 Y: 506.0 Pressure: 0.23529413 Size: 30.045734 direction: right
+time ms: 1605504196601 action: key move X: 652.86536 Y: 506.0 Pressure: 0.23529413 Size: 30.045734 direction: right
+time ms: 1605504196617 action: key move X: 655.9612 Y: 506.0 Pressure: 0.227451 Size: 30.045734 direction: right
+time ms: 1605504196633 action: key move X: 655.4696 Y: 506.0 Pressure: 0.16862746 Size: 20.030489 direction: right
+New Swipe
+time ms: 1605504197047 action: key down X: 642.9543 Y: 529.0 Pressure: 0.13333334 Size: 20.030489
+time ms: 1605504197127 action: key move X: 644.62744 Y: 560.0415 Pressure: 0.16078432 Size: 20.030489 direction: down
+time ms: 1605504197142 action: key move X: 645.4466 Y: 584.54193 Pressure: 0.16078432 Size: 20.030489 direction: down
+time ms: 1605504197160 action: key move X: 644.9604 Y: 616.0815 Pressure: 0.16862746 Size: 20.030489 direction: down
+time ms: 1605504197175 action: key move X: 643.457 Y: 645.9645 Pressure: 0.16078432 Size: 20.030489 direction: down
+time ms: 1605504197192 action: key move X: 635.0095 Y: 724.66626 Pressure: 0.14117648 Size: 20.030489 direction: down
+time ms: 1605504197208 action: key move X: 630.4942 Y: 740.0176 Pressure: 0.13333334 Size: 20.030489 direction: down
+time ms: 1605504197225 action: key move X: 628.4346 Y: 771.24744 Pressure: 0.11764707 Size: 20.030489 direction: down
+time ms: 1605504197241 action: key move X: 629.9146 Y: 804.83777 Pressure: 0.10980393 Size: 20.030489 direction: down
+time ms: 1605504197257 action: key move X: 629.9146 Y: 854.29846 Pressure: 0.10196079 Size: 20.030489 direction: down
+time ms: 1605504197274 action: key move X: 629.9146 Y: 879.1469 Pressure: 0.098039225 Size: 20.030489 direction: down
+time ms: 1605504197290 action: key move X: 631.4087 Y: 893.7907 Pressure: 0.09019608 Size: 20.030489 direction: down
+time ms: 1605504197307 action: key move X: 632.4122 Y: 925.7196 Pressure: 0.09019608 Size: 20.030489 direction: down
+time ms: 1605504197324 action: key move X: 631.9207 Y: 941.5023 Pressure: 0.09019608 Size: 20.030489 direction: down
+time ms: 1605504197339 action: key move X: 627.407 Y: 951.5 Pressure: 0.08235294 Size: 20.030489 direction: down
+time ms: 1605504197358 action: key move X: 626.90546 Y: 956.3437 Pressure: 0.08235294 Size: 20.030489 direction: down
+time ms: 1605504197375 action: key move X: 626.21765 Y: 960.7429 Pressure: 0.08627451 Size: 20.030489 direction: down
+time ms: 1605504197389 action: key move X: 625.40784 Y: 963.97266 Pressure: 0.07450981 Size: 20.030489 direction: down
+New Swipe
+time ms: 1605504197704 action: key down X: 623.89636 Y: 922.0 Pressure: 0.121568635 Size: 20.030489
+time ms: 1605504197816 action: key move X: 599.6463 Y: 923.0 Pressure: 0.098039225 Size: 20.030489 direction: left
+time ms: 1605504197832 action: key move X: 582.15875 Y: 923.0 Pressure: 0.09019608 Size: 20.030489 direction: left
+time ms: 1605504197849 action: key move X: 553.7059 Y: 923.0 Pressure: 0.09019608 Size: 20.030489 direction: left
+time ms: 1605504197865 action: key move X: 533.76276 Y: 923.0 Pressure: 0.08627451 Size: 20.030489 direction: left
+time ms: 1605504197881 action: key move X: 471.06238 Y: 920.0252 Pressure: 0.08235294 Size: 20.030489 direction: left
+time ms: 1605504197897 action: key move X: 456.38718 Y: 919.5 Pressure: 0.08235294 Size: 20.030489 direction: left
+time ms: 1605504197914 action: key move X: 393.36603 Y: 917.0263 Pressure: 0.07058824 Size: 20.030489 direction: left
+time ms: 1605504197935 action: key move X: 345.66586 Y: 916.62195 Pressure: 0.06666667 Size: 30.045734 direction: left
+time ms: 1605504197954 action: key move X: 317.3525 Y: 915.3194 Pressure: 0.0627451 Size: 30.045734 direction: left
+time ms: 1605504197965 action: key move X: 302.89758 Y: 915.0 Pressure: 0.0627451 Size: 20.030489 direction: left
+time ms: 1605504197979 action: key move X: 293.12207 Y: 915.0 Pressure: 0.0627451 Size: 20.030489 direction: left
+time ms: 1605504197997 action: key move X: 285.01382 Y: 914.30676 Pressure: 0.0627451 Size: 20.030489 direction: left
+time ms: 1605504198013 action: key move X: 279.4122 Y: 913.509 Pressure: 0.0627451 Size: 20.030489 direction: left
+time ms: 1605504198029 action: key move X: 267.96835 Y: 914.0 Pressure: 0.06666667 Size: 20.030489 direction: left
+time ms: 1605504198047 action: key move X: 262.36505 Y: 914.0 Pressure: 0.06666667 Size: 20.030489 direction: left
+time ms: 1605504198062 action: key move X: 253.86897 Y: 912.51215 Pressure: 0.07450981 Size: 20.030489 direction: left
+time ms: 1605504198079 action: key move X: 250.3859 Y: 911.52496 Pressure: 0.0627451 Size: 20.030489 direction: left
+time ms: 1605504198094 action: key move X: 250.76219 Y: 910.0 Pressure: 0.04705883 Size: 20.030489 direction: left
+New Swipe
+time ms: 1605504198459 action: key down X: 163.49695 Y: 902.0 Pressure: 0.050980397 Size: 20.030489
+time ms: 1605504198621 action: key move X: 166.54288 Y: 880.06433 Pressure: 0.08235294 Size: 20.030489 direction: up
+time ms: 1605504198639 action: key move X: 169.58618 Y: 856.43427 Pressure: 0.09411766 Size: 20.030489 direction: up
+time ms: 1605504198655 action: key move X: 171.89388 Y: 829.8003 Pressure: 0.10196079 Size: 20.030489 direction: up
+time ms: 1605504198670 action: key move X: 177.33914 Y: 782.59906 Pressure: 0.10588236 Size: 20.030489 direction: up
+time ms: 1605504198687 action: key move X: 180.91347 Y: 749.3189 Pressure: 0.121568635 Size: 20.030489 direction: up
+time ms: 1605504198701 action: key move X: 182.5216 Y: 730.88153 Pressure: 0.13725491 Size: 20.030489 direction: up
+time ms: 1605504198719 action: key move X: 183.88245 Y: 702.4414 Pressure: 0.15294118 Size: 20.030489 direction: up
+time ms: 1605504198735 action: key move X: 183.07335 Y: 683.8889 Pressure: 0.15686275 Size: 20.030489 direction: up
+time ms: 1605504198752 action: key move X: 179.058 Y: 657.61456 Pressure: 0.16078432 Size: 20.030489 direction: up
+time ms: 1605504198767 action: key move X: 171.57182 Y: 635.69293 Pressure: 0.17254902 Size: 20.030489 direction: up
+time ms: 1605504198784 action: key move X: 161.19838 Y: 615.98627 Pressure: 0.1764706 Size: 20.030489 direction: up
+time ms: 1605504198800 action: key move X: 153.55786 Y: 594.7392 Pressure: 0.16862746 Size: 20.030489 direction: up
+time ms: 1605504198818 action: key move X: 145.58943 Y: 573.8856 Pressure: 0.17254902 Size: 20.030489 direction: up
+time ms: 1605504198834 action: key move X: 141.6639 Y: 566.4666 Pressure: 0.18039216 Size: 20.030489 direction: up
+time ms: 1605504198850 action: key move X: 138.44759 Y: 560.0535 Pressure: 0.16862746 Size: 20.030489 direction: up
+time ms: 1605504198867 action: key move X: 137.41768 Y: 558.0 Pressure: 0.14901961 Size: 20.030489 direction: up
+New Swipe
+time ms: 1605504340084 action: key down X: 1249.7988 Y: 1713.0 Pressure: 0.12941177 Size: 20.030489
+New Swipe
+time ms: 1605504341955 action: key down X: 279.85062 Y: 490.0 Pressure: 0.1137255 Size: 20.030489
+time ms: 1605504342050 action: key move X: 292.89023 Y: 489.0 Pressure: 0.15294118 Size: 30.045734 direction: right
+time ms: 1605504342068 action: key move X: 356.7555 Y: 485.63226 Pressure: 0.15294118 Size: 30.045734 direction: right
+time ms: 1605504342085 action: key move X: 388.57803 Y: 484.00528 Pressure: 0.16862746 Size: 30.045734 direction: right
+time ms: 1605504342100 action: key move X: 449.58667 Y: 484.0 Pressure: 0.18431373 Size: 30.045734 direction: right
+time ms: 1605504342116 action: key move X: 503.01523 Y: 484.0 Pressure: 0.18823531 Size: 30.045734 direction: right
+time ms: 1605504342133 action: key move X: 516.5142 Y: 486.96414 Pressure: 0.20000002 Size: 30.045734 direction: right
+time ms: 1605504342150 action: key move X: 528.2878 Y: 488.96466 Pressure: 0.20784315 Size: 30.045734 direction: right
+time ms: 1605504342165 action: key move X: 544.9857 Y: 490.97992 Pressure: 0.21176472 Size: 30.045734 direction: right
+time ms: 1605504342182 action: key move X: 565.36993 Y: 492.6826 Pressure: 0.20000002 Size: 30.045734 direction: right
+time ms: 1605504342197 action: key move X: 581.4361 Y: 493.48343 Pressure: 0.15294118 Size: 20.030489 direction: right
+New Swipe
+time ms: 1605504342397 action: key down X: 605.8415 Y: 518.0 Pressure: 0.18039216 Size: 20.030489
+time ms: 1605504342494 action: key move X: 611.2632 Y: 547.0695 Pressure: 0.16078432 Size: 20.030489 direction: down
+time ms: 1605504342510 action: key move X: 615.3264 Y: 569.75415 Pressure: 0.15686275 Size: 20.030489 direction: down
+time ms: 1605504342527 action: key move X: 618.8355 Y: 599.17053 Pressure: 0.16078432 Size: 20.030489 direction: down
+time ms: 1605504342542 action: key move X: 621.34937 Y: 625.14667 Pressure: 0.16862746 Size: 20.030489 direction: down
+time ms: 1605504342558 action: key move X: 625.8035 Y: 697.5698 Pressure: 0.15294118 Size: 20.030489 direction: down
+time ms: 1605504342575 action: key move X: 622.4017 Y: 725.13617 Pressure: 0.14117648 Size: 20.030489 direction: down
+time ms: 1605504342592 action: key move X: 617.4865 Y: 763.9889 Pressure: 0.121568635 Size: 20.030489 direction: down
+time ms: 1605504342608 action: key move X: 615.89764 Y: 782.20514 Pressure: 0.10980393 Size: 20.030489 direction: down
+time ms: 1605504342624 action: key move X: 610.90564 Y: 811.1707 Pressure: 0.1254902 Size: 20.030489 direction: down
+time ms: 1605504342640 action: key move X: 608.3912 Y: 821.77594 Pressure: 0.12941177 Size: 20.030489 direction: down
+time ms: 1605504342658 action: key move X: 606.8717 Y: 831.8373 Pressure: 0.13333334 Size: 20.030489 direction: down
+time ms: 1605504342674 action: key move X: 606.36975 Y: 837.78656 Pressure: 0.13725491 Size: 20.030489 direction: down
+time ms: 1605504342692 action: key move X: 605.8415 Y: 846.54956 Pressure: 0.13725491 Size: 20.030489 direction: down
+time ms: 1605504342707 action: key move X: 605.8415 Y: 852.95966 Pressure: 0.11764707 Size: 20.030489 direction: down
+time ms: 1605504342724 action: key move X: 605.8415 Y: 865.31335 Pressure: 0.09411766 Size: 20.030489 direction: down
+time ms: 1605504342738 action: key move X: 605.8415 Y: 869.0 Pressure: 0.058823533 Size: 20.030489 direction: down
+New Swipe
+time ms: 1605504342924 action: key down X: 578.75916 Y: 931.0 Pressure: 0.14901961 Size: 20.030489
+time ms: 1605504343035 action: key move X: 533.36865 Y: 931.0 Pressure: 0.11764707 Size: 20.030489 direction: left
+time ms: 1605504343052 action: key move X: 497.43692 Y: 931.0 Pressure: 0.10196079 Size: 30.045734 direction: left
+time ms: 1605504343070 action: key move X: 446.75766 Y: 928.03674 Pressure: 0.08235294 Size: 30.045734 direction: left
+time ms: 1605504343085 action: key move X: 411.08667 Y: 927.52094 Pressure: 0.08235294 Size: 30.045734 direction: left
+time ms: 1605504343101 action: key move X: 358.0745 Y: 930.0548 Pressure: 0.078431375 Size: 20.030489 direction: left
+time ms: 1605504343117 action: key move X: 342.54117 Y: 932.5 Pressure: 0.07450981 Size: 20.030489 direction: left
+time ms: 1605504343133 action: key move X: 310.47565 Y: 929.519 Pressure: 0.06666667 Size: 20.030489 direction: left
+time ms: 1605504343151 action: key move X: 292.52518 Y: 928.5065 Pressure: 0.0627451 Size: 20.030489 direction: left
+time ms: 1605504343167 action: key move X: 235.73312 Y: 930.4885 Pressure: 0.050980397 Size: 20.030489 direction: left
+time ms: 1605504343183 action: key move X: 216.23038 Y: 927.04095 Pressure: 0.050980397 Size: 20.030489 direction: left
+time ms: 1605504343199 action: key move X: 202.88039 Y: 925.0293 Pressure: 0.04705883 Size: 20.030489 direction: left
+time ms: 1605504343216 action: key move X: 150.16695 Y: 927.4949 Pressure: 0.039215688 Size: 20.030489 direction: left
+time ms: 1605504343231 action: key move X: 150.45732 Y: 924.0 Pressure: 0.039215688 Size: 20.030489 direction: left
+New Swipe
+time ms: 1605504343467 action: key down X: 159.48476 Y: 884.0 Pressure: 0.050980397 Size: 20.030489
+time ms: 1605504343546 action: key move X: 158.79404 Y: 841.14386 Pressure: 0.09019608 Size: 20.030489 direction: up
+time ms: 1605504343560 action: key move X: 157.99763 Y: 810.1787 Pressure: 0.09411766 Size: 20.030489 direction: up
+time ms: 1605504343579 action: key move X: 157.81017 Y: 763.559 Pressure: 0.11764707 Size: 20.030489 direction: up
+time ms: 1605504343593 action: key move X: 156.98859 Y: 732.43396 Pressure: 0.1254902 Size: 20.030489 direction: up
+time ms: 1605504343609 action: key move X: 151.51216 Y: 640.9552 Pressure: 0.14117648 Size: 20.030489 direction: up
+time ms: 1605504343625 action: key move X: 150.47748 Y: 621.87164 Pressure: 0.13333334 Size: 20.030489 direction: up
+time ms: 1605504343641 action: key move X: 148.46866 Y: 604.20856 Pressure: 0.1254902 Size: 20.030489 direction: up
+time ms: 1605504343658 action: key move X: 138.42073 Y: 584.0 Pressure: 0.08627451 Size: 20.030489 direction: up
+New Swipe
+time ms: 1605504343911 action: key down X: 170.5183 Y: 471.0 Pressure: 0.121568635 Size: 20.030489
+time ms: 1605504344020 action: key move X: 196.6562 Y: 469.66232 Pressure: 0.227451 Size: 30.045734 direction: right
+time ms: 1605504344039 action: key move X: 223.4718 Y: 466.94702 Pressure: 0.21568629 Size: 30.045734 direction: right
+time ms: 1605504344058 action: key move X: 255.3384 Y: 463.92096 Pressure: 0.20392159 Size: 30.045734 direction: right
+time ms: 1605504344070 action: key move X: 309.56424 Y: 460.9227 Pressure: 0.20392159 Size: 30.045734 direction: right
+time ms: 1605504344084 action: key move X: 359.7635 Y: 458.53952 Pressure: 0.21176472 Size: 30.045734 direction: right
+time ms: 1605504344102 action: key move X: 379.79764 Y: 452.55246 Pressure: 0.21568629 Size: 30.045734 direction: right
+time ms: 1605504344118 action: key move X: 416.55093 Y: 457.96027 Pressure: 0.22352943 Size: 30.045734 direction: right
+time ms: 1605504344134 action: key move X: 446.7685 Y: 457.0 Pressure: 0.21960786 Size: 30.045734 direction: right
+time ms: 1605504344150 action: key move X: 483.89243 Y: 457.0 Pressure: 0.2392157 Size: 30.045734 direction: right
+time ms: 1605504344167 action: key move X: 505.15448 Y: 458.48535 Pressure: 0.24705884 Size: 30.045734 direction: right
+time ms: 1605504344184 action: key move X: 528.82166 Y: 461.38312 Pressure: 0.23529413 Size: 30.045734 direction: right
+time ms: 1605504344200 action: key move X: 546.2353 Y: 462.96136 Pressure: 0.25490198 Size: 30.045734 direction: right
+time ms: 1605504344216 action: key move X: 560.89813 Y: 464.96393 Pressure: 0.2509804 Size: 30.045734 direction: right
+time ms: 1605504344233 action: key move X: 582.52966 Y: 469.9518 Pressure: 0.22352943 Size: 30.045734 direction: right
+time ms: 1605504344248 action: key move X: 596.814 Y: 466.0 Pressure: 0.13725491 Size: 30.045734 direction: right
+New Swipe
+time ms: 1605504344483 action: key down X: 650.97864 Y: 501.0 Pressure: 0.19215688 Size: 20.030489
+time ms: 1605504344578 action: key move X: 650.2869 Y: 528.99884 Pressure: 0.18823531 Size: 20.030489 direction: down
+time ms: 1605504344594 action: key move X: 649.4899 Y: 552.0419 Pressure: 0.1764706 Size: 20.030489 direction: down
+time ms: 1605504344611 action: key move X: 644.1972 Y: 602.9186 Pressure: 0.15294118 Size: 30.045734 direction: down
+time ms: 1605504344627 action: key move X: 641.0077 Y: 633.9217 Pressure: 0.1254902 Size: 20.030489 direction: down
+time ms: 1605504344643 action: key move X: 636.9946 Y: 730.8595 Pressure: 0.121568635 Size: 20.030489 direction: down
+time ms: 1605504344659 action: key move X: 647.94824 Y: 769.3196 Pressure: 0.10980393 Size: 20.030489 direction: down
+time ms: 1605504344676 action: key move X: 650.90027 Y: 789.8949 Pressure: 0.10196079 Size: 20.030489 direction: down
+time ms: 1605504344692 action: key move X: 654.942 Y: 828.5621 Pressure: 0.08627451 Size: 20.030489 direction: down
+time ms: 1605504344709 action: key move X: 661.9022 Y: 856.9335 Pressure: 0.078431375 Size: 20.030489 direction: down
+New Swipe
+time ms: 1605504345025 action: key down X: 595.811 Y: 920.0 Pressure: 0.121568635 Size: 20.030489
+time ms: 1605504345120 action: key move X: 559.537 Y: 921.393 Pressure: 0.11764707 Size: 20.030489 direction: left
+time ms: 1605504345136 action: key move X: 513.8326 Y: 925.4418 Pressure: 0.09019608 Size: 20.030489 direction: left
+time ms: 1605504345152 action: key move X: 474.82736 Y: 929.4098 Pressure: 0.06666667 Size: 30.045734 direction: left
+time ms: 1605504345168 action: key move X: 403.0131 Y: 932.95074 Pressure: 0.054901965 Size: 40.060978 direction: left
+time ms: 1605504345184 action: key move X: 264.53967 Y: 931.0 Pressure: 0.050980397 Size: 30.045734 direction: left
+time ms: 1605504345202 action: key move X: 258.11688 Y: 934.6914 Pressure: 0.04705883 Size: 30.045734 direction: left
+time ms: 1605504345219 action: key move X: 234.293 Y: 933.59827 Pressure: 0.043137256 Size: 20.030489 direction: left
+time ms: 1605504345233 action: key move X: 216.74408 Y: 932.00775 Pressure: 0.04705883 Size: 20.030489 direction: left
+time ms: 1605504345250 action: key move X: 204.01192 Y: 931.5245 Pressure: 0.04705883 Size: 20.030489 direction: left
+time ms: 1605504345266 action: key move X: 168.71956 Y: 930.57654 Pressure: 0.043137256 Size: 20.030489 direction: left
+time ms: 1605504345282 action: key move X: 161.49086 Y: 930.0 Pressure: 0.03137255 Size: 20.030489 direction: left
+New Swipe
+time ms: 1605504345551 action: key down X: 160.48781 Y: 902.0 Pressure: 0.054901965 Size: 10.0152445
+time ms: 1605504345645 action: key move X: 161.49086 Y: 861.4875 Pressure: 0.09411766 Size: 20.030489 direction: up
+time ms: 1605504345661 action: key move X: 161.49086 Y: 829.8727 Pressure: 0.1137255 Size: 20.030489 direction: up
+time ms: 1605504345678 action: key move X: 159.78062 Y: 782.2088 Pressure: 0.13725491 Size: 20.030489 direction: up
+time ms: 1605504345693 action: key move X: 158.98485 Y: 752.0615 Pressure: 0.14901961 Size: 20.030489 direction: up
+time ms: 1605504345709 action: key move X: 152.62598 Y: 670.33014 Pressure: 0.14901961 Size: 20.030489 direction: up
+time ms: 1605504345726 action: key move X: 149.48367 Y: 639.7858 Pressure: 0.16862746 Size: 20.030489 direction: up
+time ms: 1605504345742 action: key move X: 141.02916 Y: 601.05994 Pressure: 0.16078432 Size: 20.030489 direction: up
+time ms: 1605504345759 action: key move X: 125.15135 Y: 553.4379 Pressure: 0.121568635 Size: 20.030489 direction: up
+time ms: 1605504345775 action: key move X: 118.35976 Y: 530.0 Pressure: 0.0627451 Size: 20.030489 direction: up
+New Swipe
+time ms: 1605504346057 action: key down X: 170.5183 Y: 493.0 Pressure: 0.12941177 Size: 20.030489
+time ms: 1605504346153 action: key move X: 197.13448 Y: 492.2871 Pressure: 0.21960786 Size: 30.045734 direction: right
+time ms: 1605504346171 action: key move X: 229.67628 Y: 490.61234 Pressure: 0.21176472 Size: 30.045734 direction: right
+time ms: 1605504346186 action: key move X: 257.86563 Y: 489.051 Pressure: 0.21568629 Size: 30.045734 direction: right
+time ms: 1605504346202 action: key move X: 308.14923 Y: 488.50638 Pressure: 0.21568629 Size: 30.045734 direction: right
+time ms: 1605504346219 action: key move X: 418.9724 Y: 495.56964 Pressure: 0.21960786 Size: 30.045734 direction: right
+time ms: 1605504346236 action: key move X: 453.39957 Y: 499.1311 Pressure: 0.21960786 Size: 30.045734 direction: right
+time ms: 1605504346262 action: key move X: 480.1735 Y: 501.4171 Pressure: 0.22352943 Size: 30.045734 direction: right
+time ms: 1605504346279 action: key move X: 502.2446 Y: 502.70087 Pressure: 0.23529413 Size: 30.045734 direction: right
+time ms: 1605504346291 action: key move X: 522.6481 Y: 503.70297 Pressure: 0.21960786 Size: 30.045734 direction: right
+time ms: 1605504346302 action: key move X: 545.16144 Y: 500.41208 Pressure: 0.18039216 Size: 30.045734 direction: right
+time ms: 1605504346316 action: key move X: 551.6768 Y: 499.0 Pressure: 0.09411766 Size: 30.045734 direction: right
+New Swipe
+time ms: 1605504346599 action: key down X: 639.9451 Y: 531.0 Pressure: 0.23529413 Size: 30.045734
+time ms: 1605504346694 action: key move X: 641.95123 Y: 540.0 Pressure: 0.21960786 Size: 30.045734 direction: down
+time ms: 1605504346712 action: key move X: 647.11835 Y: 589.2313 Pressure: 0.21568629 Size: 30.045734 direction: down
+time ms: 1605504346727 action: key move X: 649.474 Y: 613.5 Pressure: 0.20784315 Size: 30.045734 direction: down
+time ms: 1605504346744 action: key move X: 655.3122 Y: 700.6451 Pressure: 0.18823531 Size: 30.045734 direction: down
+time ms: 1605504346761 action: key move X: 659.9861 Y: 768.211 Pressure: 0.1764706 Size: 30.045734 direction: down
+time ms: 1605504346776 action: key move X: 658.71826 Y: 777.1863 Pressure: 0.15686275 Size: 20.030489 direction: down
+time ms: 1605504346792 action: key move X: 662.5481 Y: 800.9644 Pressure: 0.14901961 Size: 20.030489 direction: down
+time ms: 1605504346809 action: key move X: 666.86475 Y: 823.6079 Pressure: 0.13725491 Size: 20.030489 direction: down
+time ms: 1605504346824 action: key move X: 670.00287 Y: 840.8155 Pressure: 0.11764707 Size: 20.030489 direction: down
+time ms: 1605504346841 action: key move X: 677.0579 Y: 856.0 Pressure: 0.07450981 Size: 20.030489 direction: down
+New Swipe
+time ms: 1605504347124 action: key down X: 628.91156 Y: 964.0 Pressure: 0.16862746 Size: 20.030489
+time ms: 1605504347203 action: key move X: 589.4841 Y: 959.0035 Pressure: 0.14509805 Size: 20.030489 direction: left
+time ms: 1605504347219 action: key move X: 553.27045 Y: 954.0803 Pressure: 0.121568635 Size: 30.045734 direction: left
+time ms: 1605504347236 action: key move X: 495.41998 Y: 943.5703 Pressure: 0.09411766 Size: 30.045734 direction: left
+time ms: 1605504347252 action: key move X: 442.63593 Y: 936.1193 Pressure: 0.078431375 Size: 30.045734 direction: left
+time ms: 1605504347268 action: key move X: 341.19092 Y: 926.5692 Pressure: 0.07450981 Size: 30.045734 direction: left
+time ms: 1605504347285 action: key move X: 342.87222 Y: 935.4633 Pressure: 0.06666667 Size: 30.045734 direction: left
+time ms: 1605504347301 action: key move X: 311.3112 Y: 932.51215 Pressure: 0.0627451 Size: 20.030489 direction: left
+time ms: 1605504347317 action: key move X: 270.93292 Y: 940.41766 Pressure: 0.058823533 Size: 20.030489 direction: left
+time ms: 1605504347334 action: key move X: 233.82768 Y: 940.9667 Pressure: 0.04705883 Size: 20.030489 direction: left
+time ms: 1605504347350 action: key move X: 199.24666 Y: 941.496 Pressure: 0.043137256 Size: 20.030489 direction: left
+time ms: 1605504347368 action: key move X: 169.70209 Y: 940.31244 Pressure: 0.043137256 Size: 20.030489 direction: left
+time ms: 1605504347384 action: key move X: 162.4939 Y: 940.0 Pressure: 0.03529412 Size: 20.030489 direction: left
+New Swipe
+time ms: 1605504347648 action: key down X: 161.49086 Y: 921.0 Pressure: 0.058823533 Size: 20.030489
+time ms: 1605504347745 action: key move X: 157.7727 Y: 894.7287 Pressure: 0.08627451 Size: 20.030489 direction: up
+time ms: 1605504347761 action: key move X: 154.49844 Y: 872.6946 Pressure: 0.10588236 Size: 20.030489 direction: up
+time ms: 1605504347777 action: key move X: 152.00624 Y: 832.53064 Pressure: 0.11764707 Size: 20.030489 direction: up
+time ms: 1605504347795 action: key move X: 146.0104 Y: 766.6192 Pressure: 0.13333334 Size: 20.030489 direction: up
+time ms: 1605504347810 action: key move X: 141.99629 Y: 711.3927 Pressure: 0.14901961 Size: 30.045734 direction: up
+time ms: 1605504347827 action: key move X: 141.47382 Y: 687.3542 Pressure: 0.15686275 Size: 20.030489 direction: up
+time ms: 1605504347844 action: key move X: 139.37291 Y: 646.80927 Pressure: 0.16862746 Size: 30.045734 direction: up
+time ms: 1605504347860 action: key move X: 136.93198 Y: 621.66296 Pressure: 0.17254902 Size: 30.045734 direction: up
+time ms: 1605504347876 action: key move X: 129.49294 Y: 593.98016 Pressure: 0.15294118 Size: 20.030489 direction: up
+time ms: 1605504347892 action: key move X: 107.03112 Y: 560.3874 Pressure: 0.121568635 Size: 20.030489 direction: up
+time ms: 1605504347908 action: key move X: 79.44278 Y: 522.302 Pressure: 0.078431375 Size: 20.030489 direction: up
+New Swipe
+time ms: 1605504348207 action: key down X: 184.56097 Y: 501.0 Pressure: 0.16862746 Size: 20.030489
+time ms: 1605504348303 action: key move X: 252.72528 Y: 498.65872 Pressure: 0.18431373 Size: 30.045734 direction: right
+time ms: 1605504348319 action: key move X: 324.26044 Y: 498.67535 Pressure: 0.16862746 Size: 40.060978 direction: right
+time ms: 1605504348335 action: key move X: 381.6087 Y: 499.49213 Pressure: 0.16470589 Size: 40.060978 direction: right
+time ms: 1605504348351 action: key move X: 437.8118 Y: 503.4499 Pressure: 0.15294118 Size: 30.045734 direction: right
+time ms: 1605504348368 action: key move X: 533.7333 Y: 512.4259 Pressure: 0.15294118 Size: 30.045734 direction: right
+time ms: 1605504348385 action: key move X: 517.9291 Y: 510.49146 Pressure: 0.16862746 Size: 30.045734 direction: right
+time ms: 1605504348400 action: key move X: 527.4206 Y: 508.5152 Pressure: 0.14901961 Size: 30.045734 direction: right
+time ms: 1605504348417 action: key move X: 530.6128 Y: 507.0 Pressure: 0.08627451 Size: 20.030489 direction: right
+New Swipe
+time ms: 1605504348749 action: key down X: 641.95123 Y: 549.0 Pressure: 0.20784315 Size: 30.045734
+time ms: 1605504348828 action: key move X: 645.6313 Y: 576.349 Pressure: 0.20000002 Size: 20.030489 direction: down
+time ms: 1605504348844 action: key move X: 649.61145 Y: 609.07336 Pressure: 0.20392159 Size: 30.045734 direction: down
+time ms: 1605504348860 action: key move X: 652.9005 Y: 637.76544 Pressure: 0.18039216 Size: 20.030489 direction: down
+time ms: 1605504348876 action: key move X: 659.9805 Y: 692.79626 Pressure: 0.16078432 Size: 30.045734 direction: down
+time ms: 1605504348893 action: key move X: 668.9716 Y: 809.27405 Pressure: 0.13333334 Size: 30.045734 direction: down
+time ms: 1605504348910 action: key move X: 662.0295 Y: 828.62164 Pressure: 0.1137255 Size: 30.045734 direction: down
+time ms: 1605504348927 action: key move X: 660.0589 Y: 861.5262 Pressure: 0.1137255 Size: 20.030489 direction: down
+time ms: 1605504348942 action: key move X: 658.01294 Y: 870.884 Pressure: 0.1137255 Size: 20.030489 direction: down
+time ms: 1605504348958 action: key move X: 657.5156 Y: 879.7947 Pressure: 0.10980393 Size: 20.030489 direction: down
+time ms: 1605504348975 action: key move X: 658.0 Y: 894.79285 Pressure: 0.06666667 Size: 20.030489 direction: down
+New Swipe
+time ms: 1605504349206 action: key down X: 636.936 Y: 961.0 Pressure: 0.15686275 Size: 20.030489
+time ms: 1605504349287 action: key move X: 606.6891 Y: 960.3286 Pressure: 0.15686275 Size: 20.030489 direction: left
+time ms: 1605504349303 action: key move X: 579.2607 Y: 959.5 Pressure: 0.12941177 Size: 30.045734 direction: left
+time ms: 1605504349320 action: key move X: 499.29816 Y: 946.84094 Pressure: 0.09411766 Size: 30.045734 direction: left
+time ms: 1605504349336 action: key move X: 443.5972 Y: 939.59766 Pressure: 0.06666667 Size: 40.060978 direction: left
+time ms: 1605504349352 action: key move X: 250.025 Y: 924.7349 Pressure: 0.058823533 Size: 40.060978 direction: left
+time ms: 1605504349368 action: key move X: 256.9363 Y: 936.9418 Pressure: 0.050980397 Size: 40.060978 direction: left
+time ms: 1605504349384 action: key move X: 231.2308 Y: 939.4505 Pressure: 0.043137256 Size: 30.045734 direction: left
+time ms: 1605504349401 action: key move X: 199.15852 Y: 939.4827 Pressure: 0.039215688 Size: 30.045734 direction: left
+time ms: 1605504349419 action: key move X: 177.03812 Y: 940.5 Pressure: 0.043137256 Size: 20.030489 direction: left
+time ms: 1605504349435 action: key move X: 170.45299 Y: 939.3261 Pressure: 0.04705883 Size: 20.030489 direction: left
+time ms: 1605504349450 action: key move X: 167.50914 Y: 939.0 Pressure: 0.039215688 Size: 20.030489 direction: left
+New Swipe
+time ms: 1605504349733 action: key down X: 176.53659 Y: 896.0 Pressure: 0.07058824 Size: 20.030489
+time ms: 1605504349812 action: key move X: 174.53981 Y: 868.4201 Pressure: 0.098039225 Size: 20.030489 direction: up
+time ms: 1605504349828 action: key move X: 172.03015 Y: 845.06793 Pressure: 0.11764707 Size: 20.030489 direction: up
+time ms: 1605504349845 action: key move X: 164.56152 Y: 814.3067 Pressure: 0.13333334 Size: 20.030489 direction: up
+time ms: 1605504349862 action: key move X: 157.14273 Y: 784.70746 Pressure: 0.14117648 Size: 20.030489 direction: up
+time ms: 1605504349878 action: key move X: 138.82027 Y: 706.3342 Pressure: 0.15686275 Size: 20.030489 direction: up
+time ms: 1605504349895 action: key move X: 132.98936 Y: 676.4379 Pressure: 0.15686275 Size: 20.030489 direction: up
+time ms: 1605504349910 action: key move X: 123.00627 Y: 627.162 Pressure: 0.16078432 Size: 30.045734 direction: up
+time ms: 1605504349926 action: key move X: 109.355545 Y: 580.0888 Pressure: 0.1254902 Size: 20.030489 direction: up
+time ms: 1605504349944 action: key move X: 95.99409 Y: 542.13806 Pressure: 0.098039225 Size: 30.045734 direction: up
+time ms: 1605504349959 action: key move X: 87.33266 Y: 503.76212 Pressure: 0.07450981 Size: 30.045734 direction: up
+New Swipe
+time ms: 1605504350241 action: key down X: 198.60365 Y: 504.0 Pressure: 0.1764706 Size: 20.030489
+time ms: 1605504350337 action: key move X: 226.88675 Y: 503.34848 Pressure: 0.20784315 Size: 30.045734 direction: right
+time ms: 1605504350353 action: key move X: 253.15025 Y: 502.50385 Pressure: 0.20000002 Size: 30.045734 direction: right
+time ms: 1605504350370 action: key move X: 319.01093 Y: 497.35538 Pressure: 0.20000002 Size: 30.045734 direction: right
+time ms: 1605504350386 action: key move X: 362.96637 Y: 494.04807 Pressure: 0.20000002 Size: 30.045734 direction: right
+time ms: 1605504350403 action: key move X: 484.2374 Y: 490.07007 Pressure: 0.21176472 Size: 30.045734 direction: right
+time ms: 1605504350419 action: key move X: 491.28387 Y: 493.48083 Pressure: 0.21176472 Size: 30.045734 direction: right
+time ms: 1605504350435 action: key move X: 519.7545 Y: 494.4895 Pressure: 0.20784315 Size: 30.045734 direction: right
+time ms: 1605504350452 action: key move X: 537.4905 Y: 494.0 Pressure: 0.20000002 Size: 30.045734 direction: right
+time ms: 1605504350468 action: key move X: 545.6585 Y: 493.0 Pressure: 0.15294118 Size: 30.045734 direction: right
+New Swipe
+time ms: 1605504350720 action: key down X: 634.9299 Y: 523.0 Pressure: 0.25882354 Size: 30.045734
+time ms: 1605504350797 action: key move X: 639.0097 Y: 562.18713 Pressure: 0.22352943 Size: 30.045734 direction: down
+time ms: 1605504350814 action: key move X: 641.42804 Y: 592.72614 Pressure: 0.21960786 Size: 30.045734 direction: down
+time ms: 1605504350829 action: key move X: 641.4253 Y: 631.5505 Pressure: 0.19607845 Size: 30.045734 direction: down
+time ms: 1605504350846 action: key move X: 640.9482 Y: 674.0049 Pressure: 0.18039216 Size: 30.045734 direction: down
+time ms: 1605504350862 action: key move X: 642.4437 Y: 780.73315 Pressure: 0.16078432 Size: 30.045734 direction: down
+time ms: 1605504350878 action: key move X: 637.4495 Y: 798.84 Pressure: 0.14509805 Size: 30.045734 direction: down
+time ms: 1605504350895 action: key move X: 635.9591 Y: 823.60834 Pressure: 0.13725491 Size: 20.030489 direction: down
+time ms: 1605504350911 action: key move X: 635.44476 Y: 844.68024 Pressure: 0.1254902 Size: 20.030489 direction: down
+time ms: 1605504350927 action: key move X: 634.4469 Y: 859.66736 Pressure: 0.11764707 Size: 20.030489 direction: down
+time ms: 1605504350944 action: key move X: 634.9299 Y: 865.82684 Pressure: 0.10588236 Size: 20.030489 direction: down
+time ms: 1605504350960 action: key move X: 631.9297 Y: 872.9643 Pressure: 0.08235294 Size: 20.030489 direction: down
+New Swipe
+time ms: 1605504351195 action: key down X: 624.8994 Y: 940.0 Pressure: 0.16470589 Size: 20.030489
+time ms: 1605504351305 action: key move X: 613.86584 Y: 940.0 Pressure: 0.13725491 Size: 20.030489 direction: left
+time ms: 1605504351322 action: key move X: 561.9194 Y: 935.561 Pressure: 0.1137255 Size: 30.045734 direction: left
+time ms: 1605504351338 action: key move X: 515.2092 Y: 932.6654 Pressure: 0.09019608 Size: 20.030489 direction: left
+time ms: 1605504351355 action: key move X: 483.8546 Y: 931.0202 Pressure: 0.078431375 Size: 30.045734 direction: left
+time ms: 1605504351371 action: key move X: 370.75848 Y: 926.0287 Pressure: 0.06666667 Size: 30.045734 direction: left
+time ms: 1605504351387 action: key move X: 359.07666 Y: 929.4869 Pressure: 0.06666667 Size: 30.045734 direction: left
+time ms: 1605504351404 action: key move X: 311.5279 Y: 929.0 Pressure: 0.0627451 Size: 30.045734 direction: left
+time ms: 1605504351420 action: key move X: 298.60193 Y: 929.0 Pressure: 0.058823533 Size: 20.030489 direction: left
+time ms: 1605504351436 action: key move X: 262.31686 Y: 934.93506 Pressure: 0.054901965 Size: 20.030489 direction: left
+time ms: 1605504351455 action: key move X: 249.99312 Y: 935.0 Pressure: 0.054901965 Size: 20.030489 direction: left
+time ms: 1605504351471 action: key move X: 238.00044 Y: 935.0 Pressure: 0.050980397 Size: 20.030489 direction: left
+time ms: 1605504351487 action: key move X: 229.85779 Y: 935.0 Pressure: 0.04705883 Size: 20.030489 direction: left
+time ms: 1605504351503 action: key move X: 219.74515 Y: 932.01544 Pressure: 0.050980397 Size: 10.0152445 direction: left
+time ms: 1605504351518 action: key move X: 215.76144 Y: 931.5176 Pressure: 0.050980397 Size: 10.0152445 direction: left
+time ms: 1605504351535 action: key move X: 209.652 Y: 929.0049 Pressure: 0.039215688 Size: 10.0152445 direction: left
+New Swipe
+time ms: 1605504351800 action: key down X: 186.56708 Y: 902.0 Pressure: 0.0627451 Size: 10.0152445
+time ms: 1605504351880 action: key move X: 189.89981 Y: 874.8221 Pressure: 0.09411766 Size: 20.030489 direction: up
+time ms: 1605504351897 action: key move X: 191.92036 Y: 840.93365 Pressure: 0.1137255 Size: 20.030489 direction: up
+time ms: 1605504351912 action: key move X: 193.55936 Y: 811.5211 Pressure: 0.1254902 Size: 20.030489 direction: up
+time ms: 1605504351929 action: key move X: 191.09027 Y: 770.8683 Pressure: 0.13725491 Size: 20.030489 direction: up
+time ms: 1605504351945 action: key move X: 173.69206 Y: 671.09424 Pressure: 0.14509805 Size: 20.030489 direction: up
+time ms: 1605504351962 action: key move X: 164.70042 Y: 644.87915 Pressure: 0.16078432 Size: 20.030489 direction: up
+time ms: 1605504351978 action: key move X: 157.62439 Y: 615.61743 Pressure: 0.17254902 Size: 30.045734 direction: up
+time ms: 1605504351994 action: key move X: 146.44513 Y: 561.5 Pressure: 0.16470589 Size: 30.045734 direction: up
+time ms: 1605504352011 action: key move X: 132.17082 Y: 527.3073 Pressure: 0.15294118 Size: 30.045734 direction: up
+time ms: 1605504352029 action: key move X: 116.012276 Y: 495.36188 Pressure: 0.13333334 Size: 30.045734 direction: up
+time ms: 1605504352051 action: key move X: 110.59332 Y: 478.71442 Pressure: 0.1137255 Size: 20.030489 direction: up
+time ms: 1605504352062 action: key move X: 109.33231 Y: 474.0 Pressure: 0.078431375 Size: 20.030489 direction: up
+New Swipe
+time ms: 1605504352276 action: key down X: 228.69511 Y: 501.0 Pressure: 0.18039216 Size: 30.045734
+time ms: 1605504352372 action: key move X: 236.71951 Y: 499.0 Pressure: 0.20392159 Size: 30.045734 direction: right
+time ms: 1605504352390 action: key move X: 282.96176 Y: 491.56424 Pressure: 0.20392159 Size: 30.045734 direction: right
+time ms: 1605504352406 action: key move X: 328.86743 Y: 486.24432 Pressure: 0.20000002 Size: 30.045734 direction: right
+time ms: 1605504352422 action: key move X: 360.15277 Y: 483.04532 Pressure: 0.20784315 Size: 30.045734 direction: right
+time ms: 1605504352438 action: key move X: 436.71213 Y: 478.0 Pressure: 0.22352943 Size: 30.045734 direction: right
+time ms: 1605504352455 action: key move X: 466.27325 Y: 478.0 Pressure: 0.23529413 Size: 30.045734 direction: right
+time ms: 1605504352471 action: key move X: 501.29208 Y: 482.36053 Pressure: 0.23529413 Size: 30.045734 direction: right
+time ms: 1605504352487 action: key move X: 526.9494 Y: 483.95923 Pressure: 0.23137257 Size: 30.045734 direction: right
+time ms: 1605504352503 action: key move X: 550.40015 Y: 484.4895 Pressure: 0.21568629 Size: 30.045734 direction: right
+time ms: 1605504352520 action: key move X: 573.64026 Y: 482.5043 Pressure: 0.19215688 Size: 30.045734 direction: right
+time ms: 1605504352536 action: key move X: 581.7683 Y: 480.0 Pressure: 0.13333334 Size: 30.045734 direction: right
+New Swipe
+time ms: 1605504352753 action: key down X: 659.00305 Y: 507.0 Pressure: 0.227451 Size: 30.045734
+time ms: 1605504352849 action: key move X: 662.0758 Y: 539.0095 Pressure: 0.24705884 Size: 30.045734 direction: down
+time ms: 1605504352865 action: key move X: 663.71027 Y: 572.5583 Pressure: 0.24313727 Size: 30.045734 direction: down
+time ms: 1605504352882 action: key move X: 664.7005 Y: 608.16406 Pressure: 0.22352943 Size: 30.045734 direction: down
+time ms: 1605504352897 action: key move X: 665.4998 Y: 637.64844 Pressure: 0.21568629 Size: 30.045734 direction: down
+time ms: 1605504352914 action: key move X: 665.02136 Y: 747.2465 Pressure: 0.20392159 Size: 30.045734 direction: down
+time ms: 1605504352930 action: key move X: 665.02136 Y: 776.54675 Pressure: 0.1764706 Size: 30.045734 direction: down
+time ms: 1605504352947 action: key move X: 666.51025 Y: 818.3114 Pressure: 0.1764706 Size: 30.045734 direction: down
+time ms: 1605504352963 action: key move X: 669.0142 Y: 844.693 Pressure: 0.17254902 Size: 20.030489 direction: down
+time ms: 1605504352979 action: key move X: 671.01416 Y: 869.1571 Pressure: 0.16470589 Size: 20.030489 direction: down
+time ms: 1605504352996 action: key move X: 671.52014 Y: 881.1442 Pressure: 0.16470589 Size: 20.030489 direction: down
+time ms: 1605504353012 action: key move X: 674.03644 Y: 895.40784 Pressure: 0.16470589 Size: 20.030489 direction: down
+time ms: 1605504353030 action: key move X: 674.754 Y: 901.2187 Pressure: 0.16078432 Size: 20.030489 direction: down
+time ms: 1605504353046 action: key move X: 676.4927 Y: 904.43646 Pressure: 0.13333334 Size: 20.030489 direction: down
+time ms: 1605504353063 action: key move X: 677.0579 Y: 905.0 Pressure: 0.07058824 Size: 20.030489 direction: down
+New Swipe
+time ms: 1605504353228 action: key down X: 664.0183 Y: 943.0 Pressure: 0.19607845 Size: 20.030489
+time ms: 1605504353292 action: key move X: 632.50836 Y: 946.066 Pressure: 0.18431373 Size: 30.045734 direction: left
+time ms: 1605504353309 action: key move X: 595.218 Y: 949.0455 Pressure: 0.16078432 Size: 30.045734 direction: left
+time ms: 1605504353325 action: key move X: 555.42706 Y: 953.495 Pressure: 0.1254902 Size: 30.045734 direction: left
+time ms: 1605504353340 action: key move X: 524.1284 Y: 957.4955 Pressure: 0.10588236 Size: 30.045734 direction: left
+time ms: 1605504353358 action: key move X: 440.1151 Y: 973.70197 Pressure: 0.098039225 Size: 30.045734 direction: left
+time ms: 1605504353374 action: key move X: 384.69547 Y: 979.5634 Pressure: 0.09019608 Size: 30.045734 direction: left
+time ms: 1605504353390 action: key move X: 335.42447 Y: 981.7021 Pressure: 0.078431375 Size: 30.045734 direction: left
+time ms: 1605504353406 action: key move X: 300.28983 Y: 982.4805 Pressure: 0.06666667 Size: 30.045734 direction: left
+time ms: 1605504353423 action: key move X: 260.78717 Y: 978.2998 Pressure: 0.058823533 Size: 30.045734 direction: left
+time ms: 1605504353439 action: key move X: 241.86331 Y: 975.1795 Pressure: 0.050980397 Size: 20.030489 direction: left
+time ms: 1605504353455 action: key move X: 230.8733 Y: 972.049 Pressure: 0.054901965 Size: 20.030489 direction: left
+time ms: 1605504353472 action: key move X: 217.53282 Y: 975.2872 Pressure: 0.054901965 Size: 20.030489 direction: left
+time ms: 1605504353488 action: key move X: 209.77586 Y: 974.51385 Pressure: 0.050980397 Size: 20.030489 direction: left
+time ms: 1605504353506 action: key move X: 205.73271 Y: 972.03577 Pressure: 0.054901965 Size: 20.030489 direction: left
+time ms: 1605504353522 action: key move X: 203.6189 Y: 971.0 Pressure: 0.054901965 Size: 20.030489 direction: left
+New Swipe
+time ms: 1605504353770 action: key down X: 174.53049 Y: 906.0 Pressure: 0.07058824 Size: 20.030489
+time ms: 1605504353834 action: key move X: 167.55223 Y: 881.29626 Pressure: 0.09019608 Size: 20.030489 direction: up
+time ms: 1605504353851 action: key move X: 160.49278 Y: 853.3063 Pressure: 0.10980393 Size: 20.030489 direction: up
+time ms: 1605504353866 action: key move X: 153.66472 Y: 822.36035 Pressure: 0.11764707 Size: 20.030489 direction: up
+time ms: 1605504353882 action: key move X: 147.98404 Y: 795.6613 Pressure: 0.13333334 Size: 20.030489 direction: up
+time ms: 1605504353899 action: key move X: 139.0637 Y: 717.57684 Pressure: 0.14509805 Size: 30.045734 direction: up
+time ms: 1605504353916 action: key move X: 137.43457 Y: 690.77783 Pressure: 0.15294118 Size: 20.030489 direction: up
+time ms: 1605504353932 action: key move X: 136.93431 Y: 653.6517 Pressure: 0.16862746 Size: 30.045734 direction: up
+time ms: 1605504353948 action: key move X: 132.6427 Y: 618.1559 Pressure: 0.18039216 Size: 30.045734 direction: up
+time ms: 1605504353964 action: key move X: 129.39328 Y: 589.0 Pressure: 0.16470589 Size: 20.030489 direction: up
+time ms: 1605504353980 action: key move X: 119.55977 Y: 558.31 Pressure: 0.15294118 Size: 20.030489 direction: up
+time ms: 1605504353996 action: key move X: 99.389626 Y: 518.7024 Pressure: 0.13333334 Size: 20.030489 direction: up
+time ms: 1605504354013 action: key move X: 87.88205 Y: 487.79175 Pressure: 0.098039225 Size: 20.030489 direction: up
+time ms: 1605504354029 action: key move X: 82.466805 Y: 480.4323 Pressure: 0.07058824 Size: 20.030489 direction: up
+New Swipe
+time ms: 1605504354245 action: key down X: 197.60062 Y: 521.0 Pressure: 0.13333334 Size: 20.030489
+time ms: 1605504354390 action: key move X: 209.63719 Y: 519.0 Pressure: 0.20784315 Size: 30.045734 direction: right
+time ms: 1605504354406 action: key move X: 254.62357 Y: 513.02 Pressure: 0.21568629 Size: 30.045734 direction: right
+time ms: 1605504354422 action: key move X: 283.03082 Y: 509.04544 Pressure: 0.22352943 Size: 30.045734 direction: right
+time ms: 1605504354439 action: key move X: 316.08542 Y: 503.63678 Pressure: 0.21960786 Size: 30.045734 direction: right
+time ms: 1605504354456 action: key move X: 407.06467 Y: 491.09473 Pressure: 0.21960786 Size: 30.045734 direction: right
+time ms: 1605504354473 action: key move X: 426.16687 Y: 487.02142 Pressure: 0.22352943 Size: 30.045734 direction: right
+time ms: 1605504354489 action: key move X: 461.88602 Y: 484.05756 Pressure: 0.23529413 Size: 30.045734 direction: right
+time ms: 1605504354506 action: key move X: 496.38 Y: 482.0 Pressure: 0.24705884 Size: 30.045734 direction: right
+time ms: 1605504354523 action: key move X: 525.38104 Y: 482.68222 Pressure: 0.24705884 Size: 30.045734 direction: right
+time ms: 1605504354539 action: key move X: 548.67145 Y: 483.48288 Pressure: 0.24313727 Size: 30.045734 direction: right
+time ms: 1605504354555 action: key move X: 562.76025 Y: 483.0 Pressure: 0.2509804 Size: 30.045734 direction: right
+time ms: 1605504354571 action: key move X: 574.6813 Y: 484.49533 Pressure: 0.2627451 Size: 30.045734 direction: right
+time ms: 1605504354588 action: key move X: 582.66943 Y: 484.0 Pressure: 0.25490198 Size: 30.045734 direction: right
+time ms: 1605504354604 action: key move X: 588.2231 Y: 484.0 Pressure: 0.24705884 Size: 30.045734 direction: right
+time ms: 1605504354620 action: key move X: 593.75 Y: 484.0 Pressure: 0.20784315 Size: 30.045734 direction: right
+time ms: 1605504354637 action: key move X: 604.19037 Y: 479.5487 Pressure: 0.10588236 Size: 30.045734 direction: right
+New Swipe
+time ms: 1605504354820 action: key down X: 647.9695 Y: 499.0 Pressure: 0.24313727 Size: 30.045734
+time ms: 1605504354965 action: key move X: 652.7625 Y: 520.8922 Pressure: 0.24313727 Size: 30.045734 direction: down
+time ms: 1605504354982 action: key move X: 655.96027 Y: 536.8322 Pressure: 0.2392157 Size: 30.045734 direction: down
+time ms: 1605504354999 action: key move X: 658.47284 Y: 552.33795 Pressure: 0.2392157 Size: 30.045734 direction: down
+time ms: 1605504355014 action: key move X: 661.44196 Y: 569.11163 Pressure: 0.24705884 Size: 30.045734 direction: down
+time ms: 1605504355031 action: key move X: 666.008 Y: 611.8609 Pressure: 0.24313727 Size: 30.045734 direction: down
+time ms: 1605504355047 action: key move X: 665.51056 Y: 620.29065 Pressure: 0.24313727 Size: 30.045734 direction: down
+time ms: 1605504355064 action: key move X: 665.02136 Y: 637.2514 Pressure: 0.23137257 Size: 20.030489 direction: down
+time ms: 1605504355082 action: key move X: 665.02136 Y: 657.07434 Pressure: 0.23137257 Size: 20.030489 direction: down
+time ms: 1605504355097 action: key move X: 665.7259 Y: 673.94073 Pressure: 0.227451 Size: 20.030489 direction: down
+time ms: 1605504355113 action: key move X: 666.5179 Y: 687.3636 Pressure: 0.227451 Size: 20.030489 direction: down
+time ms: 1605504355129 action: key move X: 664.53925 Y: 707.1319 Pressure: 0.22352943 Size: 20.030489 direction: down
+time ms: 1605504355146 action: key move X: 663.5232 Y: 724.8851 Pressure: 0.21960786 Size: 20.030489 direction: down
+time ms: 1605504355162 action: key move X: 662.53174 Y: 741.19525 Pressure: 0.20784315 Size: 20.030489 direction: down
+time ms: 1605504355179 action: key move X: 660.0317 Y: 762.7448 Pressure: 0.20000002 Size: 20.030489 direction: down
+time ms: 1605504355195 action: key move X: 658.2933 Y: 780.61395 Pressure: 0.1764706 Size: 20.030489 direction: down
+time ms: 1605504355212 action: key move X: 657.5102 Y: 792.32513 Pressure: 0.1764706 Size: 20.030489 direction: down
+time ms: 1605504355228 action: key move X: 656.50995 Y: 799.855 Pressure: 0.17254902 Size: 20.030489 direction: down
+time ms: 1605504355244 action: key move X: 656.99695 Y: 806.8854 Pressure: 0.17254902 Size: 20.030489 direction: down
+time ms: 1605504355262 action: key move X: 656.99695 Y: 816.4234 Pressure: 0.18039216 Size: 20.030489 direction: down
+time ms: 1605504355278 action: key move X: 656.99695 Y: 819.54443 Pressure: 0.16078432 Size: 20.030489 direction: down
+time ms: 1605504355294 action: key move X: 657.71814 Y: 826.7518 Pressure: 0.1254902 Size: 20.030489 direction: down
+time ms: 1605504355309 action: key move X: 658.0 Y: 829.0 Pressure: 0.0627451 Size: 20.030489 direction: down
+New Swipe
+time ms: 1605504355640 action: key down X: 622.8933 Y: 904.0 Pressure: 0.14117648 Size: 20.030489
+time ms: 1605504355770 action: key move X: 615.87195 Y: 908.0 Pressure: 0.18431373 Size: 20.030489 direction: left
+time ms: 1605504355786 action: key move X: 586.22504 Y: 922.7784 Pressure: 0.17254902 Size: 20.030489 direction: left
+time ms: 1605504355802 action: key move X: 559.1404 Y: 931.03973 Pressure: 0.15686275 Size: 20.030489 direction: left
+time ms: 1605504355820 action: key move X: 508.28122 Y: 941.70764 Pressure: 0.15294118 Size: 20.030489 direction: left
+time ms: 1605504355835 action: key move X: 461.57593 Y: 950.8676 Pressure: 0.13333334 Size: 30.045734 direction: left
+time ms: 1605504355853 action: key move X: 422.8413 Y: 939.21326 Pressure: 0.1137255 Size: 30.045734 direction: left
+time ms: 1605504355871 action: key move X: 385.3109 Y: 933.10443 Pressure: 0.09019608 Size: 30.045734 direction: left
+time ms: 1605504355884 action: key move X: 357.13846 Y: 932.54736 Pressure: 0.08627451 Size: 30.045734 direction: left
+time ms: 1605504355901 action: key move X: 334.06677 Y: 931.31573 Pressure: 0.08627451 Size: 30.045734 direction: left
+time ms: 1605504355917 action: key move X: 320.97562 Y: 930.5 Pressure: 0.08627451 Size: 20.030489 direction: left
+time ms: 1605504355934 action: key move X: 305.1221 Y: 929.51215 Pressure: 0.08235294 Size: 20.030489 direction: left
+time ms: 1605504355951 action: key move X: 293.6274 Y: 928.51807 Pressure: 0.078431375 Size: 20.030489 direction: left
+time ms: 1605504355968 action: key move X: 254.8355 Y: 925.2195 Pressure: 0.07450981 Size: 20.030489 direction: left
+time ms: 1605504355984 action: key move X: 228.66002 Y: 922.05634 Pressure: 0.07058824 Size: 20.030489 direction: left
+time ms: 1605504356000 action: key move X: 221.008 Y: 921.04205 Pressure: 0.06666667 Size: 20.030489 direction: left
+time ms: 1605504356015 action: key move X: 215.3095 Y: 920.5172 Pressure: 0.06666667 Size: 20.030489 direction: left
+time ms: 1605504356031 action: key move X: 213.64938 Y: 920.0 Pressure: 0.058823533 Size: 20.030489 direction: left
+New Swipe
+time ms: 1605504356312 action: key down X: 171.52135 Y: 899.0 Pressure: 0.0627451 Size: 20.030489
+time ms: 1605504356378 action: key move X: 166.70764 Y: 866.44574 Pressure: 0.07058824 Size: 20.030489 direction: up
+time ms: 1605504356395 action: key move X: 162.49571 Y: 834.2648 Pressure: 0.08627451 Size: 20.030489 direction: up
+time ms: 1605504356409 action: key move X: 159.56735 Y: 810.1793 Pressure: 0.09411766 Size: 20.030489 direction: up
+time ms: 1605504356425 action: key move X: 155.48502 Y: 769.11804 Pressure: 0.10980393 Size: 20.030489 direction: up
+time ms: 1605504356442 action: key move X: 142.48073 Y: 660.90515 Pressure: 0.1254902 Size: 20.030489 direction: up
+time ms: 1605504356458 action: key move X: 144.46677 Y: 643.55304 Pressure: 0.14901961 Size: 20.030489 direction: up
+time ms: 1605504356475 action: key move X: 142.47034 Y: 618.5596 Pressure: 0.15294118 Size: 30.045734 direction: up
+time ms: 1605504356491 action: key move X: 138.94841 Y: 576.3302 Pressure: 0.14901961 Size: 20.030489 direction: up
+time ms: 1605504356507 action: key move X: 141.42987 Y: 554.0 Pressure: 0.1137255 Size: 30.045734 direction: up
+New Swipe
+time ms: 1605504356756 action: key down X: 199.6067 Y: 475.0 Pressure: 0.15294118 Size: 20.030489
+time ms: 1605504356854 action: key move X: 244.45834 Y: 471.1168 Pressure: 0.18431373 Size: 30.045734 direction: right
+time ms: 1605504356870 action: key move X: 288.95947 Y: 466.3544 Pressure: 0.19215688 Size: 30.045734 direction: right
+time ms: 1605504356886 action: key move X: 333.99573 Y: 463.5342 Pressure: 0.20392159 Size: 30.045734 direction: right
+time ms: 1605504356902 action: key move X: 368.00836 Y: 462.02713 Pressure: 0.21568629 Size: 30.045734 direction: right
+time ms: 1605504356919 action: key move X: 467.8071 Y: 463.0 Pressure: 0.22352943 Size: 30.045734 direction: right
+time ms: 1605504356936 action: key move X: 492.3661 Y: 467.89328 Pressure: 0.22352943 Size: 30.045734 direction: right
+time ms: 1605504356951 action: key move X: 518.0747 Y: 471.0 Pressure: 0.21176472 Size: 30.045734 direction: right
+time ms: 1605504356967 action: key move X: 549.2526 Y: 469.0 Pressure: 0.227451 Size: 30.045734 direction: right
+time ms: 1605504356984 action: key move X: 568.02875 Y: 470.4914 Pressure: 0.227451 Size: 30.045734 direction: right
+time ms: 1605504357000 action: key move X: 584.96564 Y: 468.51645 Pressure: 0.227451 Size: 30.045734 direction: right
+time ms: 1605504357016 action: key move X: 592.0938 Y: 469.0 Pressure: 0.22352943 Size: 30.045734 direction: right
+time ms: 1605504357035 action: key move X: 601.63873 Y: 467.519 Pressure: 0.1764706 Size: 30.045734 direction: right
+time ms: 1605504357049 action: key move X: 602.83234 Y: 465.0 Pressure: 0.098039225 Size: 30.045734 direction: right
+New Swipe
+time ms: 1605504357216 action: key down X: 636.936 Y: 490.0 Pressure: 0.26666668 Size: 30.045734
+time ms: 1605504357280 action: key move X: 644.1992 Y: 516.7185 Pressure: 0.23137257 Size: 30.045734 direction: down
+time ms: 1605504357297 action: key move X: 652.73846 Y: 552.2693 Pressure: 0.21568629 Size: 30.045734 direction: down
+time ms: 1605504357312 action: key move X: 659.38135 Y: 580.9677 Pressure: 0.21568629 Size: 30.045734 direction: down
+time ms: 1605504357328 action: key move X: 665.38605 Y: 630.10345 Pressure: 0.18431373 Size: 30.045734 direction: down
+time ms: 1605504357345 action: key move X: 679.935 Y: 788.1723 Pressure: 0.15294118 Size: 30.045734 direction: down
+time ms: 1605504357362 action: key move X: 675.0165 Y: 827.17163 Pressure: 0.12941177 Size: 30.045734 direction: down
+time ms: 1605504357378 action: key move X: 672.6621 Y: 855.5158 Pressure: 0.11764707 Size: 30.045734 direction: down
+time ms: 1605504357395 action: key move X: 671.0575 Y: 872.31305 Pressure: 0.10980393 Size: 20.030489 direction: down
+time ms: 1605504357410 action: key move X: 670.5534 Y: 879.8164 Pressure: 0.10588236 Size: 20.030489 direction: down
+time ms: 1605504357428 action: key move X: 672.5341 Y: 888.89984 Pressure: 0.08627451 Size: 20.030489 direction: down
+time ms: 1605504357443 action: key move X: 675.0089 Y: 897.3075 Pressure: 0.04705883 Size: 20.030489 direction: down
+New Swipe
+time ms: 1605504357610 action: key down X: 636.936 Y: 943.0 Pressure: 0.12941177 Size: 20.030489
+time ms: 1605504357674 action: key move X: 602.9574 Y: 946.3456 Pressure: 0.12941177 Size: 20.030489 direction: left
+time ms: 1605504357690 action: key move X: 564.24347 Y: 945.6599 Pressure: 0.1137255 Size: 20.030489 direction: left
+time ms: 1605504357706 action: key move X: 530.77295 Y: 944.03217 Pressure: 0.08627451 Size: 20.030489 direction: left
+time ms: 1605504357721 action: key move X: 486.3024 Y: 942.0151 Pressure: 0.07058824 Size: 30.045734 direction: left
+time ms: 1605504357738 action: key move X: 355.53604 Y: 923.6855 Pressure: 0.058823533 Size: 30.045734 direction: left
+time ms: 1605504357755 action: key move X: 286.78094 Y: 913.7625 Pressure: 0.050980397 Size: 30.045734 direction: left
+time ms: 1605504357771 action: key move X: 211.12941 Y: 910.0385 Pressure: 0.04705883 Size: 40.060978 direction: left
+time ms: 1605504357788 action: key move X: 207.47275 Y: 910.9774 Pressure: 0.039215688 Size: 30.045734 direction: left
+time ms: 1605504357805 action: key move X: 190.34714 Y: 908.5384 Pressure: 0.03529412 Size: 20.030489 direction: left
+time ms: 1605504357821 action: key move X: 170.93471 Y: 911.47925 Pressure: 0.03529412 Size: 20.030489 direction: left
+time ms: 1605504357837 action: key move X: 150.53755 Y: 916.984 Pressure: 0.03529412 Size: 20.030489 direction: left
+time ms: 1605504357853 action: key move X: 138.30252 Y: 915.0 Pressure: 0.039215688 Size: 20.030489 direction: left
+time ms: 1605504357870 action: key move X: 136.41463 Y: 915.0 Pressure: 0.039215688 Size: 20.030489 direction: left
+New Swipe
+time ms: 1605504358086 action: key down X: 167.50914 Y: 894.0 Pressure: 0.058823533 Size: 10.0152445
+time ms: 1605504358182 action: key move X: 167.50914 Y: 885.0 Pressure: 0.08235294 Size: 20.030489 direction: up
+time ms: 1605504358197 action: key move X: 163.04903 Y: 839.0521 Pressure: 0.10196079 Size: 20.030489 direction: up
+time ms: 1605504358213 action: key move X: 158.48721 Y: 803.04663 Pressure: 0.10980393 Size: 20.030489 direction: up
+time ms: 1605504358229 action: key move X: 156.01443 Y: 766.4828 Pressure: 0.12941177 Size: 20.030489 direction: up
+time ms: 1605504358247 action: key move X: 150.02586 Y: 684.4362 Pressure: 0.14117648 Size: 20.030489 direction: up
+time ms: 1605504358264 action: key move X: 148.00294 Y: 679.9424 Pressure: 0.14509805 Size: 20.030489 direction: up
+time ms: 1605504358280 action: key move X: 146.46707 Y: 654.77356 Pressure: 0.16470589 Size: 20.030489 direction: up
+time ms: 1605504358296 action: key move X: 142.95413 Y: 634.14386 Pressure: 0.1764706 Size: 20.030489 direction: up
+time ms: 1605504358314 action: key move X: 139.9677 Y: 618.25366 Pressure: 0.18431373 Size: 20.030489 direction: up
+time ms: 1605504358330 action: key move X: 135.6595 Y: 592.5476 Pressure: 0.1764706 Size: 20.030489 direction: up
+time ms: 1605504358348 action: key move X: 131.06891 Y: 573.348 Pressure: 0.17254902 Size: 20.030489 direction: up
+time ms: 1605504358363 action: key move X: 127.01542 Y: 557.9915 Pressure: 0.1764706 Size: 20.030489 direction: up
+time ms: 1605504358381 action: key move X: 118.33393 Y: 543.2775 Pressure: 0.16470589 Size: 20.030489 direction: up
+time ms: 1605504358397 action: key move X: 112.94921 Y: 531.53296 Pressure: 0.15294118 Size: 20.030489 direction: up
+time ms: 1605504358411 action: key move X: 108.88927 Y: 522.62823 Pressure: 0.14509805 Size: 20.030489 direction: up
+time ms: 1605504358427 action: key move X: 99.46563 Y: 510.24493 Pressure: 0.121568635 Size: 20.030489 direction: up
+time ms: 1605504358443 action: key move X: 98.29878 Y: 504.0 Pressure: 0.08235294 Size: 20.030489 direction: up
+New Swipe
+time ms: 1605504358644 action: key down X: 172.52438 Y: 497.0 Pressure: 0.17254902 Size: 20.030489
+time ms: 1605504358756 action: key move X: 186.56708 Y: 496.0 Pressure: 0.19215688 Size: 30.045734 direction: right
+time ms: 1605504358772 action: key move X: 241.56017 Y: 494.51822 Pressure: 0.20000002 Size: 30.045734 direction: right
+time ms: 1605504358788 action: key move X: 274.20914 Y: 493.51837 Pressure: 0.21176472 Size: 30.045734 direction: right
+time ms: 1605504358806 action: key move X: 307.28888 Y: 491.0088 Pressure: 0.21176472 Size: 30.045734 direction: right
+time ms: 1605504358822 action: key move X: 377.22012 Y: 489.03195 Pressure: 0.227451 Size: 30.045734 direction: right
+time ms: 1605504358838 action: key move X: 386.43927 Y: 488.5094 Pressure: 0.23137257 Size: 30.045734 direction: right
+time ms: 1605504358855 action: key move X: 411.16937 Y: 483.91205 Pressure: 0.23137257 Size: 30.045734 direction: right
+time ms: 1605504358871 action: key move X: 427.09787 Y: 481.53003 Pressure: 0.23137257 Size: 30.045734 direction: right
+time ms: 1605504358887 action: key move X: 443.9423 Y: 480.04523 Pressure: 0.23137257 Size: 30.045734 direction: right
+time ms: 1605504358904 action: key move X: 463.6697 Y: 476.53784 Pressure: 0.24705884 Size: 30.045734 direction: right
+time ms: 1605504358921 action: key move X: 480.83997 Y: 474.3081 Pressure: 0.25490198 Size: 30.045734 direction: right
+time ms: 1605504358937 action: key move X: 492.74496 Y: 473.51685 Pressure: 0.2627451 Size: 30.045734 direction: right
+time ms: 1605504358953 action: key move X: 513.7816 Y: 475.48526 Pressure: 0.25490198 Size: 30.045734 direction: right
+time ms: 1605504358969 action: key move X: 532.95886 Y: 475.0 Pressure: 0.25882354 Size: 30.045734 direction: right
+time ms: 1605504358986 action: key move X: 545.82837 Y: 475.0 Pressure: 0.26666668 Size: 30.045734 direction: right
+time ms: 1605504359003 action: key move X: 555.0356 Y: 475.0 Pressure: 0.28235295 Size: 30.045734 direction: right
+time ms: 1605504359019 action: key move X: 563.1689 Y: 475.0 Pressure: 0.28627452 Size: 30.045734 direction: right
+time ms: 1605504359035 action: key move X: 570.6376 Y: 475.0 Pressure: 0.28235295 Size: 30.045734 direction: right
+time ms: 1605504359053 action: key move X: 578.97144 Y: 475.0 Pressure: 0.27058825 Size: 30.045734 direction: right
+time ms: 1605504359069 action: key move X: 585.00916 Y: 475.0 Pressure: 0.24705884 Size: 30.045734 direction: right
+time ms: 1605504359085 action: key move X: 590.28845 Y: 474.30115 Pressure: 0.20000002 Size: 30.045734 direction: right
+time ms: 1605504359101 action: key move X: 594.225 Y: 473.51624 Pressure: 0.15686275 Size: 30.045734 direction: right
+time ms: 1605504359117 action: key move X: 594.8079 Y: 472.0 Pressure: 0.09019608 Size: 20.030489 direction: right
+New Swipe
+time ms: 1605504359319 action: key down X: 664.0183 Y: 521.0 Pressure: 0.27450982 Size: 30.045734
+time ms: 1605504359431 action: key move X: 671.3785 Y: 546.7971 Pressure: 0.23529413 Size: 30.045734 direction: down
+time ms: 1605504359447 action: key move X: 677.4147 Y: 581.586 Pressure: 0.22352943 Size: 30.045734 direction: down
+time ms: 1605504359462 action: key move X: 683.4632 Y: 625.62445 Pressure: 0.21176472 Size: 30.045734 direction: down
+time ms: 1605504359479 action: key move X: 693.20483 Y: 699.10175 Pressure: 0.18431373 Size: 30.045734 direction: down
+time ms: 1605504359494 action: key move X: 701.5188 Y: 761.6439 Pressure: 0.16862746 Size: 30.045734 direction: down
+time ms: 1605504359511 action: key move X: 696.11584 Y: 771.2291 Pressure: 0.14509805 Size: 20.030489 direction: down
+time ms: 1605504359529 action: key move X: 702.12354 Y: 796.926 Pressure: 0.13725491 Size: 20.030489 direction: down
+time ms: 1605504359545 action: key move X: 701.8328 Y: 822.9914 Pressure: 0.15294118 Size: 20.030489 direction: down
+time ms: 1605504359565 action: key move X: 703.5185 Y: 851.0819 Pressure: 0.14901961 Size: 20.030489 direction: down
+time ms: 1605504359577 action: key move X: 705.115 Y: 876.54816 Pressure: 0.14117648 Size: 20.030489 direction: down
+time ms: 1605504359593 action: key move X: 705.62573 Y: 892.0998 Pressure: 0.12941177 Size: 20.030489 direction: down
+time ms: 1605504359612 action: key move X: 703.6572 Y: 910.1495 Pressure: 0.1254902 Size: 20.030489 direction: down
+time ms: 1605504359627 action: key move X: 702.6439 Y: 918.9015 Pressure: 0.11764707 Size: 20.030489 direction: down
+time ms: 1605504359644 action: key move X: 699.125 Y: 929.5606 Pressure: 0.10196079 Size: 20.030489 direction: down
+time ms: 1605504359659 action: key move X: 699.125 Y: 931.0 Pressure: 0.050980397 Size: 20.030489 direction: down
+New Swipe
+time ms: 1605504359940 action: key down X: 670.03656 Y: 914.0 Pressure: 0.14509805 Size: 20.030489
+time ms: 1605504360038 action: key move X: 627.5898 Y: 931.8833 Pressure: 0.1764706 Size: 30.045734 direction: left
+time ms: 1605504360053 action: key move X: 600.1213 Y: 941.7138 Pressure: 0.16078432 Size: 30.045734 direction: left
+time ms: 1605504360070 action: key move X: 546.95325 Y: 949.09454 Pressure: 0.14509805 Size: 30.045734 direction: left
+time ms: 1605504360086 action: key move X: 510.53882 Y: 953.93506 Pressure: 0.1254902 Size: 30.045734 direction: left
+time ms: 1605504360105 action: key move X: 400.3762 Y: 959.30865 Pressure: 0.098039225 Size: 30.045734 direction: left
+time ms: 1605504360118 action: key move X: 345.61722 Y: 960.9383 Pressure: 0.08627451 Size: 30.045734 direction: left
+time ms: 1605504360135 action: key move X: 303.42224 Y: 975.0 Pressure: 0.07450981 Size: 30.045734 direction: left
+time ms: 1605504360151 action: key move X: 297.9055 Y: 977.5 Pressure: 0.06666667 Size: 20.030489 direction: left
+time ms: 1605504360169 action: key move X: 279.53564 Y: 978.0 Pressure: 0.07450981 Size: 20.030489 direction: left
+time ms: 1605504360185 action: key move X: 267.4785 Y: 978.0 Pressure: 0.07058824 Size: 20.030489 direction: left
+time ms: 1605504360200 action: key move X: 256.88217 Y: 978.0 Pressure: 0.06666667 Size: 20.030489 direction: left
+time ms: 1605504360216 action: key move X: 247.925 Y: 978.0 Pressure: 0.06666667 Size: 20.030489 direction: left
+time ms: 1605504360235 action: key move X: 221.60646 Y: 980.9588 Pressure: 0.0627451 Size: 20.030489 direction: left
+time ms: 1605504360250 action: key move X: 202.96121 Y: 972.00616 Pressure: 0.054901965 Size: 20.030489 direction: left
+time ms: 1605504360266 action: key move X: 197.60062 Y: 969.0 Pressure: 0.04705883 Size: 20.030489 direction: left
+New Swipe
+time ms: 1605504360482 action: key down X: 184.56097 Y: 924.0 Pressure: 0.07058824 Size: 10.0152445
+time ms: 1605504360612 action: key move X: 181.52863 Y: 895.79175 Pressure: 0.10196079 Size: 20.030489 direction: up
+time ms: 1605504360628 action: key move X: 180.54878 Y: 867.64435 Pressure: 0.1137255 Size: 20.030489 direction: up
+time ms: 1605504360644 action: key move X: 180.54878 Y: 843.9445 Pressure: 0.13333334 Size: 20.030489 direction: up
+time ms: 1605504360661 action: key move X: 186.53354 Y: 801.3176 Pressure: 0.14901961 Size: 20.030489 direction: up
+time ms: 1605504360677 action: key move X: 196.69496 Y: 719.3688 Pressure: 0.16862746 Size: 30.045734 direction: up
+time ms: 1605504360692 action: key move X: 201.51703 Y: 688.12067 Pressure: 0.17254902 Size: 20.030489 direction: up
+time ms: 1605504360709 action: key move X: 203.07153 Y: 653.54865 Pressure: 0.18823531 Size: 30.045734 direction: up
+time ms: 1605504360726 action: key move X: 198.61787 Y: 621.7338 Pressure: 0.20000002 Size: 30.045734 direction: up
+time ms: 1605504360743 action: key move X: 192.2157 Y: 590.8413 Pressure: 0.20000002 Size: 30.045734 direction: up
+time ms: 1605504360759 action: key move X: 182.64964 Y: 558.37787 Pressure: 0.21176472 Size: 30.045734 direction: up
+time ms: 1605504360775 action: key move X: 176.039 Y: 539.51294 Pressure: 0.20784315 Size: 30.045734 direction: up
+time ms: 1605504360791 action: key move X: 170.63019 Y: 521.3719 Pressure: 0.20392159 Size: 30.045734 direction: up
+time ms: 1605504360808 action: key move X: 163.06743 Y: 499.71533 Pressure: 0.13333334 Size: 20.030489 direction: up
