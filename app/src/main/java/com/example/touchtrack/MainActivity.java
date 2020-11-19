@@ -339,6 +339,8 @@ public class MainActivity extends AppCompatActivity {
                     Log.e("Exception", "File write failed: " + e.toString());
                 }
 
+                sdl = new ArrayList<SwipeData>();
+
                 new SendJson().execute(sdl_json_str);
 
                 break;
