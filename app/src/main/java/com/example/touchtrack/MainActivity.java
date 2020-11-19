@@ -92,8 +92,9 @@ public class MainActivity extends AppCompatActivity {
         private float pressure = 0;
         private float velocity_x = 0;
         private float velocity_y = 0;
+        private String direction = "";
 
-        SwipeData(long ts, float x, float y, float touch_size, float pressure, float velocity_x, float velocity_y) {
+        SwipeData(long ts, float x, float y, float touch_size, float pressure, float velocity_x, float velocity_y, String dir) {
             this.ts = ts;
             this.x = x;
             this.y = y;
@@ -101,6 +102,7 @@ public class MainActivity extends AppCompatActivity {
             this.pressure = pressure;
             this.velocity_x = velocity_x;
             this.velocity_y = velocity_y;
+            this.direction = dir;
         }
     }
 
@@ -211,6 +213,8 @@ public class MainActivity extends AppCompatActivity {
 
 //                mv.touch_start(x, y);
 //                mv.invalidate();
+                SwipeData ss = new SwipeData(ms, x, y, touch_size, pressure, 0, 0, "null");
+                sdl.add(ss);
                 break;
 
             case MotionEvent.ACTION_MOVE:
@@ -254,8 +258,9 @@ public class MainActivity extends AppCompatActivity {
                     direction = "null";
                 }
                 position.append("\nPredicted direction: " + direction);
-
-                SwipeData sd = new SwipeData(ms, newX, newY, touch_size, pressure, vx, vy);
+                x = newX;
+                y = newY;
+                SwipeData sd = new SwipeData(ms, newX, newY, touch_size, pressure, vx, vy, direction);
                 sdl.add(sd);
 
 
@@ -290,6 +295,8 @@ public class MainActivity extends AppCompatActivity {
                 } catch (IOException e) {
                     Log.e("Exception", "File write failed: " + e.toString());
                 }
+
+                sdl = new ArrayList<SwipeData>();
 
                 new SendJson().execute(sdl_json_str);
 
