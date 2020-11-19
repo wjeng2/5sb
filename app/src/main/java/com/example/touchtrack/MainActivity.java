@@ -73,8 +73,9 @@ public class MainActivity extends AppCompatActivity {
         private float pressure = 0;
         private float velocity_x = 0;
         private float velocity_y = 0;
+        private String direction = "";
 
-        SwipeData(long ts, float x, float y, float touch_size, float pressure, float velocity_x, float velocity_y) {
+        SwipeData(long ts, float x, float y, float touch_size, float pressure, float velocity_x, float velocity_y, String dir) {
             this.ts = ts;
             this.x = x;
             this.y = y;
@@ -82,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
             this.pressure = pressure;
             this.velocity_x = velocity_x;
             this.velocity_y = velocity_y;
+            this.direction = dir;
         }
     }
 
@@ -300,8 +302,9 @@ public class MainActivity extends AppCompatActivity {
                     direction = "null";
                 }
                 position.append("\nPredicted direction: " + direction);
-
-                SwipeData sd = new SwipeData(ms, newX, newY, touch_size, pressure, vx, vy);
+                x = newX;
+                y = newY;
+                SwipeData sd = new SwipeData(ms, newX, newY, touch_size, pressure, vx, vy, direction);
                 sdl.add(sd);
                 System.out.println(sdl.size());
                 System.out.println(gson.toJson(sd));
