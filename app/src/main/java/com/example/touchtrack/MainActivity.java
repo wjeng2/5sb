@@ -292,41 +292,40 @@ public class MainActivity extends AppCompatActivity {
                 newY = event.getY();
                 switch (swipeCount){
                     case 1 :
-                        if (direction.equals("right")) {
-                            swipeCount ++;
-                        } else {
-                            position.setText("please try again ");
-                        }
-                        break;
+//                        if (direction.equals("right")) {
+//                            swipeCount ++;
+//                        } else {
+//                            position.setText("please try again ");
+//                        }
+//                        break;
                     case 2 :
-                        if (direction.equals("down")) {
-                            swipeCount ++;
-                        } else {
-                            position.setText("please try again");
-                        }
-                        break;
+//                        if (direction.equals("down")) {
+//                            swipeCount ++;
+//                        } else {
+//                            position.setText("please try again");
+//                        }
+//                        break;
                     case 3 :
-                        if (direction.equals("left")) {
-                            swipeCount ++;
-                        } else {
-                            position.setText("please try again");
-                        }
+//                        if (direction.equals("left")) {
+//                            swipeCount ++;
+//                        } else {
+//                            position.setText("please try again");
+//                        }
+//                        break;
+                        swipeCount ++;
                         break;
                     case 4 :
-                        if (direction.equals("up")) {
-                            try {
-                                OutputStreamWriter outputStreamWriter = new OutputStreamWriter(openFileOutput("swipe" + ms + ".json", MODE_APPEND));
-                                outputStreamWriter.write(sdl_json_str + "\n");
-                                outputStreamWriter.close();
-                            } catch (IOException e) {
-                                Log.e("Exception", "File write failed: " + e.toString());
-                            }
-
-                            sdl = new ArrayList<SwipeData>();
-                            swipeCount = 1;
-                        } else {
-                            position.setText("please try again");
+                        try {
+                            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(openFileOutput("swipe" + ms + ".json", MODE_APPEND));
+                            outputStreamWriter.write(sdl_json_str + "\n");
+                            outputStreamWriter.close();
+                        } catch (IOException e) {
+                            Log.e("Exception", "File write failed: " + e.toString());
                         }
+
+                        sdl = new ArrayList<SwipeData>();
+                        swipeCount = 1;
+
                         break;
                 }
 
