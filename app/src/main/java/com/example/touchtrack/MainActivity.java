@@ -5,6 +5,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Context;
 import android.graphics.BlurMaskFilter;
+import android.graphics.Color;
 import android.graphics.EmbossMaskFilter;
 import android.graphics.MaskFilter;
 import android.graphics.Path;
@@ -32,6 +33,7 @@ import java.io.Writer;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -48,7 +50,11 @@ public class MainActivity extends AppCompatActivity {
     private float x;
     private float y;
     private VelocityTracker mVelocityTracker = null;
+
+    //https://stackoverflow.com/questions/16650419/draw-in-canvas-by-finger-android
 //    private MyView mv;
+    private MaskFilter  mEmboss;
+    private MaskFilter  mBlur;
 
     Gson gson = new Gson();
 
@@ -59,13 +65,26 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        mv = MyView () findViewById(R.id.mv) ;
-//        setContentView(mv);
         position = (TextView) findViewById(R.id.position);
+
+//        mv = new MyView(this);
+//        setContentView(mv);
+//        mv.mPaint = new Paint();
+//        mv. mPaint.setAntiAlias(true);
+//        mv. mPaint.setDither(true);
+//        mv. mPaint.setColor(0xFFFF0000);
+//        mv. mPaint.setStyle(Paint.Style.STROKE);
+//        mv. mPaint.setStrokeJoin(Paint.Join.ROUND);
+//        mv. mPaint.setStrokeCap(Paint.Cap.ROUND);
+//        mv. mPaint.setStrokeWidth(5);
+//        mEmboss = new EmbossMaskFilter(new float[] { 1, 1, 1 },
+//                0.4f, 6, 3.5f);
+//        mBlur = new BlurMaskFilter(8, BlurMaskFilter.Blur.NORMAL);
+
 
     }
 
-    class SwipeData {
+    static class SwipeData {
         private long ts = 0;
         private float x = 0;
         private float y = 0;
@@ -85,42 +104,18 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-//    public class MyView extends View {
-//
-//
-//        private static final float MINP = 0.25f;
-//        private static final float MAXP = 0.75f;
-//
-//        private Bitmap mBitmap;
-//        private Canvas mCanvas;
-//        private Path mPath;
-//        private Paint mBitmapPaint;
-//
-//
+//    public static class MyView extends View {
+//        private Bitmap  mBitmap;
+//        private Canvas  mCanvas;
+//        private Path    mPath;
+//        private Paint   mBitmapPaint;
 //        private Paint mPaint;
-//        private MaskFilter mEmboss;
-//        private MaskFilter mBlur;
 //
 //        public MyView(Context c) {
 //            super(c);
 //
 //            mPath = new Path();
 //            mBitmapPaint = new Paint(Paint.DITHER_FLAG);
-//
-//
-//            mPaint = new Paint();
-//            mPaint.setAntiAlias(true);
-//            mPaint.setDither(true);
-//            mPaint.setColor(0xFFFF0000);
-//            mPaint.setStyle(Paint.Style.STROKE);
-//            mPaint.setStrokeJoin(Paint.Join.ROUND);
-//            mPaint.setStrokeCap(Paint.Cap.ROUND);
-//            mPaint.setStrokeWidth(12);
-//
-//            mEmboss = new EmbossMaskFilter(new float[]{1, 1, 1},
-//                    0.4f, 6, 3.5f);
-//
-//            mBlur = new BlurMaskFilter(8, BlurMaskFilter.Blur.NORMAL);
 //        }
 //
 //        @Override
@@ -132,64 +127,38 @@ public class MainActivity extends AppCompatActivity {
 //
 //        @Override
 //        protected void onDraw(Canvas canvas) {
-//            canvas.drawColor(0xFFAAAAAA);
-//
+//            canvas.drawColor(Color.TRANSPARENT);
 //            canvas.drawBitmap(mBitmap, 0, 0, mBitmapPaint);
-//
 //            canvas.drawPath(mPath, mPaint);
 //        }
+//
 //
 //        private float mX, mY;
 //        private static final float TOUCH_TOLERANCE = 4;
 //
-//        public void touch_start(float x, float y) {
+//        private void touch_start(float x, float y) {
 //            mPath.reset();
 //            mPath.moveTo(x, y);
 //            mX = x;
 //            mY = y;
 //        }
-//
-//        public void touch_move(float x, float y) {
+//        private void touch_move(float x, float y) {
 //            float dx = Math.abs(x - mX);
 //            float dy = Math.abs(y - mY);
 //            if (dx >= TOUCH_TOLERANCE || dy >= TOUCH_TOLERANCE) {
-//                mPath.quadTo(mX, mY, (x + mX) / 2, (y + mY) / 2);
+//                mPath.quadTo(mX, mY, (x + mX)/2, (y + mY)/2);
 //                mX = x;
 //                mY = y;
 //            }
 //        }
-//
-//        public void touch_up() {
+//        private void touch_up() {
 //            mPath.lineTo(mX, mY);
 //            // commit the path to our offscreen
 //            mCanvas.drawPath(mPath, mPaint);
 //            // kill this so we don't double draw
 //            mPath.reset();
 //        }
-//
-////        @Override
-////        public boolean onTouchEvent(MotionEvent event) {
-////            float x = event.getX();
-////            float y = event.getY();
-////
-////            switch (event.getAction()) {
-////                case MotionEvent.ACTION_DOWN:
-////                    touch_start(x, y);
-////                    invalidate();
-////                    break;
-////                case MotionEvent.ACTION_MOVE:
-////                    touch_move(x, y);
-////                    invalidate();
-////                    break;
-////                case MotionEvent.ACTION_UP:
-////                    touch_up();
-////                    invalidate();
-////                    break;
-////            }
-////            return true;
-////        }
 //    }
-
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
@@ -204,31 +173,14 @@ public class MainActivity extends AppCompatActivity {
         float newY;
 
         position.bringToFront();
-//        setContentView(new MyView(this));
-//
-//        mPaint = new Paint();
-//        mPaint.setAntiAlias(true);
-//        mPaint.setDither(true);
-//        mPaint.setColor(0xFFFF0000);
-//        mPaint.setStyle(Paint.Style.STROKE);
-//        mPaint.setStrokeJoin(Paint.Join.ROUND);
-//        mPaint.setStrokeCap(Paint.Cap.ROUND);
-//        mPaint.setStrokeWidth(12);
-
-//        mEmboss = new EmbossMaskFilter(new float[] { 1, 1, 1 },
-//                0.4f, 6, 3.5f);
-//
-//        mBlur = new BlurMaskFilter(8, BlurMaskFilter.Blur.NORMAL);
 
         long ms;
         String message = "";
 
-
-
         switch (action) {
             case MotionEvent.ACTION_DOWN:
-                //                mv.touch_start(x, y);
-                //                mv.invalidate();
+//                mv.mBitmap = Bitmap.createBitmap(mv.getWidth(), mv.getHeight(), Bitmap.Config.ARGB_8888);
+//                mv.mCanvas = new Canvas(mv.mBitmap);
 
                 ms = System.currentTimeMillis();
                 x = event.getX();
@@ -256,21 +208,23 @@ public class MainActivity extends AppCompatActivity {
                 } catch (IOException e) {
                     Log.e("Exception", "File write failed: " + e.toString());
                 }
+
+//                mv.touch_start(x, y);
+//                mv.invalidate();
                 break;
 
             case MotionEvent.ACTION_MOVE:
 
                 newX = event.getX();
                 newY = event.getY();
-                // mv.touch_move(newX, newY);
-//                mv.invalidate();
+
                 float vx = mVelocityTracker.getXVelocity();
                 float vy = mVelocityTracker.getYVelocity();
                 ms = System.currentTimeMillis();
 
                 mVelocityTracker.addMovement(event);
                 mVelocityTracker.computeCurrentVelocity(100);
-                position.setText("Time: " + Long.toString(ms));
+                position.setText("Time: " + ms);
                 position.append("\nX: " + newX + " Y: " + newY);
                 position.append("\nPressure: " + pressure);
                 position.append("\nSize: " + touch_size);
@@ -303,8 +257,6 @@ public class MainActivity extends AppCompatActivity {
 
                 SwipeData sd = new SwipeData(ms, newX, newY, touch_size, pressure, vx, vy);
                 sdl.add(sd);
-                System.out.println(sdl.size());
-                System.out.println(gson.toJson(sd));
 
 
                 message = "time ms: " + ms + " action: key move" + " X: " + newX + " Y: " + newY + " Pressure: " + pressure + " Size: " + touch_size + " direction: " + direction;
@@ -316,15 +268,15 @@ public class MainActivity extends AppCompatActivity {
                     Log.e("Exception", "File write failed: " + e.toString());
                 }
 
+//                mv.touch_move(newX, newY);
+//                mv.invalidate();
+
                 break;
 
             case MotionEvent.ACTION_UP:
-                //                mv.touch_up();
-                //                mv.invalidate();
                 mVelocityTracker.recycle();
                 mVelocityTracker = null;
                 String sdl_json_str = gson.toJson(sdl);
-                System.out.println("sdl_json_str: " + sdl_json_str);
 
                 position.setText("");
                 ms = System.currentTimeMillis();
@@ -340,6 +292,9 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 new SendJson().execute(sdl_json_str);
+
+//                mv.touch_up();
+//                mv.invalidate();
 
                 break;
 
@@ -361,19 +316,6 @@ public class MainActivity extends AppCompatActivity {
             System.out.println("Sending request to echo server " + params[0]);
 
             String serverReply = "";
-//            try  {
-//                java.util.Scanner s = new java.util.Scanner(
-//                        new java.net.URL(
-//                                "https://postman-echo.com/post")
-//                                .openStream(), "UTF-8")
-//                        .useDelimiter("\\A");
-//                serverReply = s.next();
-//                System.out.println("Sent request to echo server, reply is" + serverReply);
-//            } catch (java.io.IOException e) {
-//                e.printStackTrace();
-//            }
-
-            ////////
 
             URL url = null;
             HttpURLConnection con = null;
@@ -387,7 +329,7 @@ public class MainActivity extends AppCompatActivity {
                 con.setDoOutput(true);
                 String jsonInputString = params[0];
                 try(OutputStream os = con.getOutputStream()) {
-                    byte[] input = jsonInputString.getBytes("utf-8");
+                    byte[] input = jsonInputString.getBytes(StandardCharsets.UTF_8);
                     os.write(input, 0, input.length);
                 }
             } catch (Exception e) {
@@ -397,7 +339,7 @@ public class MainActivity extends AppCompatActivity {
             System.out.println("Json sent, length " + params[0].length());
 
             try (BufferedReader br = new BufferedReader(
-                new InputStreamReader(con.getInputStream(), "utf-8"))) {
+                new InputStreamReader(con.getInputStream(), StandardCharsets.UTF_8))) {
                 StringBuilder response = new StringBuilder();
                 String responseLine = null;
                 while ((responseLine = br.readLine()) != null) {
@@ -416,7 +358,6 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(String serverReply) {
             super.onPostExecute(serverReply);
-
             Log.e("*****Server Reply*****:", serverReply+"");
         }
     }

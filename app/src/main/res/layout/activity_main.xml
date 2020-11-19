@@ -5,6 +5,7 @@
     android:id="@+id/main_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    app:srcCompat="@drawable/square_trans"
     tools:context=".MainActivity">
 
     <TextView
@@ -18,20 +19,8 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/square_trans"
         app:layout_constraintVertical_bias="0.921" />
-
-    <View
-        class="com.example.touchtrack$MyView"
-        android:id="@+id/mv"
-        android:layout_width="358dp"
-        android:layout_height="455dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.147" />
 
     <ImageView
         android:id="@+id/imageView2"
