@@ -258,6 +258,8 @@ public class MainActivity extends AppCompatActivity {
                 } catch (IOException e) {
                     Log.e("Exception", "File write failed: " + e.toString());
                 }
+                SwipeData ss = new SwipeData(ms, x, y, touch_size, pressure, 0, 0, "null");
+                sdl.add(ss);
                 break;
 
             case MotionEvent.ACTION_MOVE:
