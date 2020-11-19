@@ -59,6 +59,8 @@ public class MainActivity extends AppCompatActivity {
     Gson gson = new Gson();
 
     private ArrayList<ArrayList<Float>> line;
+    int swipeCount = 1;
+    String direction = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -178,7 +180,6 @@ public class MainActivity extends AppCompatActivity {
 
         long ms;
         String message = "";
-
         switch (action) {
             case MotionEvent.ACTION_DOWN:
 //                mv.mBitmap = Bitmap.createBitmap(mv.getWidth(), mv.getHeight(), Bitmap.Config.ARGB_8888);
@@ -200,6 +201,7 @@ public class MainActivity extends AppCompatActivity {
                 position.append("\nSize: " + touch_size);
                 position.append("\nX original: " + x);
                 position.append("\nY original: " + y);
+                position.append("step no. " + swipeCount);
 
                 message = "New Swipe\n";
                 message += "time ms: " + ms + " action: key down" + " X: " + x + " Y: " + y + " Pressure: " + pressure + " Size: " + touch_size;
@@ -236,9 +238,10 @@ public class MainActivity extends AppCompatActivity {
                 position.append("\nY velocity: " + vy);
                 position.append("\nX original: " + x);
                 position.append("\nY original: " + y);
+                position.append("step no. " + swipeCount);
 
                 //Predicting Direction
-                String direction = "null";
+                direction = "null";
                 float diffx = newX - x;
                 float diffy = newY - y;
 
@@ -264,14 +267,14 @@ public class MainActivity extends AppCompatActivity {
                 sdl.add(sd);
 
 
-                message = "time ms: " + ms + " action: key move" + " X: " + newX + " Y: " + newY + " Pressure: " + pressure + " Size: " + touch_size + " direction: " + direction;
-                try {
-                    OutputStreamWriter outputStreamWriter = new OutputStreamWriter(openFileOutput("recordlog.txt", MODE_APPEND));
-                    outputStreamWriter.write(message + "\n");
-                    outputStreamWriter.close();
-                } catch (IOException e) {
-                    Log.e("Exception", "File write failed: " + e.toString());
-                }
+//                message = "time ms: " + ms + " action: key move" + " X: " + newX + " Y: " + newY + " Pressure: " + pressure + " Size: " + touch_size + " direction: " + direction;
+//                try {
+//                    OutputStreamWriter outputStreamWriter = new OutputStreamWriter(openFileOutput("recordlog.txt", MODE_APPEND));
+//                    outputStreamWriter.write(message + "\n");
+//                    outputStreamWriter.close();
+//                } catch (IOException e) {
+//                    Log.e("Exception", "File write failed: " + e.toString());
+//                }
 
 //                mv.touch_move(newX, newY);
 //                mv.invalidate();
@@ -283,20 +286,49 @@ public class MainActivity extends AppCompatActivity {
                 mVelocityTracker = null;
                 String sdl_json_str = gson.toJson(sdl);
 
-                position.setText("");
+//                position.setText("");
                 ms = System.currentTimeMillis();
                 newX = event.getX();
                 newY = event.getY();
+                switch (swipeCount){
+                    case 1 :
+                        if (direction.equals("right")) {
+                            swipeCount ++;
+                        } else {
+                            position.setText("please try again ");
+                        }
+                        break;
+                    case 2 :
+                        if (direction.equals("down")) {
+                            swipeCount ++;
+                        } else {
+                            position.setText("please try again");
+                        }
+                        break;
+                    case 3 :
+                        if (direction.equals("left")) {
+                            swipeCount ++;
+                        } else {
+                            position.setText("please try again");
+                        }
+                        break;
+                    case 4 :
+                        if (direction.equals("up")) {
+                            try {
+                                OutputStreamWriter outputStreamWriter = new OutputStreamWriter(openFileOutput("swipe" + ms + ".json", MODE_APPEND));
+                                outputStreamWriter.write(sdl_json_str + "\n");
+                                outputStreamWriter.close();
+                            } catch (IOException e) {
+                                Log.e("Exception", "File write failed: " + e.toString());
+                            }
 
-                try {
-                    OutputStreamWriter outputStreamWriter = new OutputStreamWriter(openFileOutput("swipe" + ms + ".json", MODE_APPEND));
-                    outputStreamWriter.write(sdl_json_str + "\n");
-                    outputStreamWriter.close();
-                } catch (IOException e) {
-                    Log.e("Exception", "File write failed: " + e.toString());
+                            sdl = new ArrayList<SwipeData>();
+                            swipeCount = 1;
+                        } else {
+                            position.setText("please try again");
+                        }
+                        break;
                 }
-
-                sdl = new ArrayList<SwipeData>();
 
                 new SendJson().execute(sdl_json_str);
 
@@ -308,7 +340,7 @@ public class MainActivity extends AppCompatActivity {
             case MotionEvent.ACTION_CANCEL:
                 mVelocityTracker.recycle();
                 mVelocityTracker = null;
-                position.setText("");
+//                position.setText("");
         }
         return true;
 
