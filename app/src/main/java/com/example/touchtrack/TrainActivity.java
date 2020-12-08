@@ -1,37 +1,21 @@
 package com.example.touchtrack;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
 
-import android.content.Context;
-import android.graphics.BlurMaskFilter;
-import android.graphics.Color;
-import android.graphics.EmbossMaskFilter;
 import android.graphics.MaskFilter;
-import android.graphics.Path;
-import android.net.wifi.ScanResult;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.VelocityTracker;
-import android.view.View;
 import android.widget.TextView;
-import android.view.MotionEvent;
-import android.graphics.Bitmap;
-import android.graphics.Canvas;
-import android.graphics.Paint;
-import android.graphics.Path;
 import android.view.MotionEvent;
 
 import com.google.gson.*;
 
 import java.io.BufferedReader;
-import java.io.FileWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
-import java.io.Writer;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
@@ -39,10 +23,8 @@ import java.util.List;
 
 import java.io.IOException;
 import java.io.OutputStreamWriter;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
-public class MainActivity extends AppCompatActivity {
+public class TrainActivity extends AppCompatActivity {
 
     List<SwipeData> sdl = new ArrayList<SwipeData>();
 
@@ -50,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     private float x;
     private float y;
     private VelocityTracker mVelocityTracker = null;
+    private String username;
 
     //https://stackoverflow.com/questions/16650419/draw-in-canvas-by-finger-android
 //    private MyView mv;
@@ -65,24 +48,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_train);
 
         position = (TextView) findViewById(R.id.position);
-
-//        mv = new MyView(this);
-//        setContentView(mv);
-//        mv.mPaint = new Paint();
-//        mv. mPaint.setAntiAlias(true);
-//        mv. mPaint.setDither(true);
-//        mv. mPaint.setColor(0xFFFF0000);
-//        mv. mPaint.setStyle(Paint.Style.STROKE);
-//        mv. mPaint.setStrokeJoin(Paint.Join.ROUND);
-//        mv. mPaint.setStrokeCap(Paint.Cap.ROUND);
-//        mv. mPaint.setStrokeWidth(5);
-//        mEmboss = new EmbossMaskFilter(new float[] { 1, 1, 1 },
-//                0.4f, 6, 3.5f);
-//        mBlur = new BlurMaskFilter(8, BlurMaskFilter.Blur.NORMAL);
-
+        username = getIntent().getStringExtra("USERNAME");
 
     }
 
@@ -95,8 +64,9 @@ public class MainActivity extends AppCompatActivity {
         private float velocity_x = 0;
         private float velocity_y = 0;
         private String direction = "";
+        private String name = "";
 
-        SwipeData(long ts, float x, float y, float touch_size, float pressure, float velocity_x, float velocity_y, String dir) {
+        SwipeData(long ts, float x, float y, float touch_size, float pressure, float velocity_x, float velocity_y, String dir, String name) {
             this.ts = ts;
             this.x = x;
             this.y = y;
@@ -105,71 +75,13 @@ public class MainActivity extends AppCompatActivity {
             this.velocity_x = velocity_x;
             this.velocity_y = velocity_y;
             this.direction = dir;
+            this.name = name;
         }
     }
 
-//    public static class MyView extends View {
-//        private Bitmap  mBitmap;
-//        private Canvas  mCanvas;
-//        private Path    mPath;
-//        private Paint   mBitmapPaint;
-//        private Paint mPaint;
-//
-//        public MyView(Context c) {
-//            super(c);
-//
-//            mPath = new Path();
-//            mBitmapPaint = new Paint(Paint.DITHER_FLAG);
-//        }
-//
-//        @Override
-//        protected void onSizeChanged(int w, int h, int oldw, int oldh) {
-//            super.onSizeChanged(w, h, oldw, oldh);
-//            mBitmap = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);
-//            mCanvas = new Canvas(mBitmap);
-//        }
-//
-//        @Override
-//        protected void onDraw(Canvas canvas) {
-//            canvas.drawColor(Color.TRANSPARENT);
-//            canvas.drawBitmap(mBitmap, 0, 0, mBitmapPaint);
-//            canvas.drawPath(mPath, mPaint);
-//        }
-//
-//
-//        private float mX, mY;
-//        private static final float TOUCH_TOLERANCE = 4;
-//
-//        private void touch_start(float x, float y) {
-//            mPath.reset();
-//            mPath.moveTo(x, y);
-//            mX = x;
-//            mY = y;
-//        }
-//        private void touch_move(float x, float y) {
-//            float dx = Math.abs(x - mX);
-//            float dy = Math.abs(y - mY);
-//            if (dx >= TOUCH_TOLERANCE || dy >= TOUCH_TOLERANCE) {
-//                mPath.quadTo(mX, mY, (x + mX)/2, (y + mY)/2);
-//                mX = x;
-//                mY = y;
-//            }
-//        }
-//        private void touch_up() {
-//            mPath.lineTo(mX, mY);
-//            // commit the path to our offscreen
-//            mCanvas.drawPath(mPath, mPaint);
-//            // kill this so we don't double draw
-//            mPath.reset();
-//        }
-//    }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-
-        int index = event.getActionIndex();
-        int pointerId = event.getPointerId(index);
-
         int action = event.getActionMasked();
         float pressure = event.getPressure(0);
         float touch_size = event.getTouchMajor(0);
@@ -179,11 +91,8 @@ public class MainActivity extends AppCompatActivity {
         position.bringToFront();
 
         long ms;
-        String message = "";
         switch (action) {
             case MotionEvent.ACTION_DOWN:
-//                mv.mBitmap = Bitmap.createBitmap(mv.getWidth(), mv.getHeight(), Bitmap.Config.ARGB_8888);
-//                mv.mCanvas = new Canvas(mv.mBitmap);
 
                 ms = System.currentTimeMillis();
                 x = event.getX();
@@ -196,6 +105,7 @@ public class MainActivity extends AppCompatActivity {
 
                 mVelocityTracker.addMovement(event);
                 position.setText("Time: " + Long.toString(ms));
+                position.append("\nName: " + username);
                 position.append("\nX: " + x + " Y: " + y);
                 position.append("\nPressure: " + pressure);
                 position.append("\nSize: " + touch_size);
@@ -203,19 +113,8 @@ public class MainActivity extends AppCompatActivity {
                 position.append("\nY original: " + y);
                 position.append("step no. " + swipeCount);
 
-                message = "New Swipe\n";
-                message += "time ms: " + ms + " action: key down" + " X: " + x + " Y: " + y + " Pressure: " + pressure + " Size: " + touch_size;
-                try {
-                    OutputStreamWriter outputStreamWriter = new OutputStreamWriter(openFileOutput("recordlog.txt", MODE_APPEND));
-                    outputStreamWriter.write(message + "\n");
-                    outputStreamWriter.close();
-                } catch (IOException e) {
-                    Log.e("Exception", "File write failed: " + e.toString());
-                }
 
-//                mv.touch_start(x, y);
-//                mv.invalidate();
-                SwipeData ss = new SwipeData(ms, x, y, touch_size, pressure, 0, 0, "null");
+                SwipeData ss = new SwipeData(ms, x, y, touch_size, pressure, 0, 0, "null", "");
                 sdl.add(ss);
                 break;
 
@@ -231,6 +130,7 @@ public class MainActivity extends AppCompatActivity {
                 mVelocityTracker.addMovement(event);
                 mVelocityTracker.computeCurrentVelocity(100);
                 position.setText("Time: " + ms);
+                position.setText("\nName: "+ username);
                 position.append("\nX: " + newX + " Y: " + newY);
                 position.append("\nPressure: " + pressure);
                 position.append("\nSize: " + touch_size);
@@ -238,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
                 position.append("\nY velocity: " + vy);
                 position.append("\nX original: " + x);
                 position.append("\nY original: " + y);
-                position.append("step no. " + swipeCount);
+                position.append("\nstep no. " + swipeCount);
 
                 //Predicting Direction
                 direction = "null";
@@ -263,21 +163,8 @@ public class MainActivity extends AppCompatActivity {
                 position.append("\nPredicted direction: " + direction);
                 x = newX;
                 y = newY;
-                SwipeData sd = new SwipeData(ms, newX, newY, touch_size, pressure, vx, vy, direction);
+                SwipeData sd = new SwipeData(ms, newX, newY, touch_size, pressure, vx, vy, direction, username);
                 sdl.add(sd);
-
-
-//                message = "time ms: " + ms + " action: key move" + " X: " + newX + " Y: " + newY + " Pressure: " + pressure + " Size: " + touch_size + " direction: " + direction;
-//                try {
-//                    OutputStreamWriter outputStreamWriter = new OutputStreamWriter(openFileOutput("recordlog.txt", MODE_APPEND));
-//                    outputStreamWriter.write(message + "\n");
-//                    outputStreamWriter.close();
-//                } catch (IOException e) {
-//                    Log.e("Exception", "File write failed: " + e.toString());
-//                }
-
-//                mv.touch_move(newX, newY);
-//                mv.invalidate();
 
                 break;
 
@@ -288,30 +175,10 @@ public class MainActivity extends AppCompatActivity {
 
 //                position.setText("");
                 ms = System.currentTimeMillis();
-                newX = event.getX();
-                newY = event.getY();
                 switch (swipeCount){
                     case 1 :
-//                        if (direction.equals("right")) {
-//                            swipeCount ++;
-//                        } else {
-//                            position.setText("please try again ");
-//                        }
-//                        break;
                     case 2 :
-//                        if (direction.equals("down")) {
-//                            swipeCount ++;
-//                        } else {
-//                            position.setText("please try again");
-//                        }
-//                        break;
                     case 3 :
-//                        if (direction.equals("left")) {
-//                            swipeCount ++;
-//                        } else {
-//                            position.setText("please try again");
-//                        }
-//                        break;
                         swipeCount ++;
                         break;
                     case 4 :
@@ -330,10 +197,6 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 new SendJson().execute(sdl_json_str);
-
-//                mv.touch_up();
-//                mv.invalidate();
-
                 break;
 
             case MotionEvent.ACTION_CANCEL:
