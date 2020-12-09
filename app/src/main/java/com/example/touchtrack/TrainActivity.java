@@ -3,21 +3,16 @@ package com.example.touchtrack;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.MaskFilter;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.VelocityTracker;
 import android.widget.TextView;
 import android.view.MotionEvent;
+import android.widget.Toast;
 
+import com.example.touchtrack.model.SwipeData;
 import com.google.gson.*;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,6 +28,7 @@ public class TrainActivity extends AppCompatActivity {
     private float y;
     private VelocityTracker mVelocityTracker = null;
     private String username;
+    private NetworkManager networkManager;
 
     //https://stackoverflow.com/questions/16650419/draw-in-canvas-by-finger-android
 //    private MyView mv;
@@ -52,31 +48,7 @@ public class TrainActivity extends AppCompatActivity {
 
         position = (TextView) findViewById(R.id.position);
         username = getIntent().getStringExtra("USERNAME");
-
-    }
-
-    static class SwipeData {
-        private long ts = 0;
-        private float x = 0;
-        private float y = 0;
-        private float touch_size = 0;
-        private float pressure = 0;
-        private float velocity_x = 0;
-        private float velocity_y = 0;
-        private String direction = "";
-        private String name = "";
-
-        SwipeData(long ts, float x, float y, float touch_size, float pressure, float velocity_x, float velocity_y, String dir, String name) {
-            this.ts = ts;
-            this.x = x;
-            this.y = y;
-            this.touch_size = touch_size;
-            this.pressure = pressure;
-            this.velocity_x = velocity_x;
-            this.velocity_y = velocity_y;
-            this.direction = dir;
-            this.name = name;
-        }
+        networkManager = NetworkManager.getInstance(getApplicationContext());
     }
 
 
@@ -190,13 +162,29 @@ public class TrainActivity extends AppCompatActivity {
                             Log.e("Exception", "File write failed: " + e.toString());
                         }
 
+                        // network request
+                        networkManager.sendData(username, new ArrayList<SwipeData>(sdl), new NetworkManager.OnSendDataListener() {
+                            @Override
+                            public void onSuccess() {
+                                Toast.makeText(getApplicationContext(), "Successfully send a data!" , Toast.LENGTH_SHORT).show();
+                            }
+
+                            @Override
+                            public void onNetworkFail() {
+                                Toast.makeText(getApplicationContext(), "network error!" , Toast.LENGTH_SHORT).show();
+                            }
+
+                            @Override
+                            public void onFail() {
+                                Toast.makeText(getApplicationContext(), "fail!" , Toast.LENGTH_SHORT).show();
+                            }
+                        });
+
                         sdl = new ArrayList<SwipeData>();
                         swipeCount = 1;
 
                         break;
                 }
-
-                new SendJson().execute(sdl_json_str);
                 break;
 
             case MotionEvent.ACTION_CANCEL:
@@ -207,62 +195,4 @@ public class TrainActivity extends AppCompatActivity {
         return true;
 
     }
-
-    // https://stackoverflow.com/questions/6053602/what-arguments-are-passed-into-asynctaskarg1-arg2-arg3
-    class SendJson extends AsyncTask<String, String, String> {
-
-        @Override
-        protected String doInBackground(String... params) {
-
-            System.out.println("Sending request to echo server " + params[0]);
-
-            String serverReply = "";
-
-            URL url = null;
-            HttpURLConnection con = null;
-
-            try {
-                url = new URL("https://postman-echo.com/post");
-                con = (HttpURLConnection)url.openConnection();
-                con.setRequestMethod("POST");
-                con.setRequestProperty("Content-Type", "application/json; utf-8");
-                con.setRequestProperty("Accept", "application/json");
-                con.setDoOutput(true);
-                String jsonInputString = params[0];
-                try(OutputStream os = con.getOutputStream()) {
-                    byte[] input = jsonInputString.getBytes(StandardCharsets.UTF_8);
-                    os.write(input, 0, input.length);
-                }
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-
-            System.out.println("Json sent, length " + params[0].length());
-
-            try (BufferedReader br = new BufferedReader(
-                new InputStreamReader(con.getInputStream(), StandardCharsets.UTF_8))) {
-                StringBuilder response = new StringBuilder();
-                String responseLine = null;
-                while ((responseLine = br.readLine()) != null) {
-                    response.append(responseLine.trim());
-                }
-                serverReply = response.toString();
-                System.out.println(serverReply);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-
-
-            return serverReply;
-        }
-
-        @Override
-        protected void onPostExecute(String serverReply) {
-            super.onPostExecute(serverReply);
-            Log.e("*****Server Reply*****:", serverReply+"");
-        }
-    }
-
-
-
 }
