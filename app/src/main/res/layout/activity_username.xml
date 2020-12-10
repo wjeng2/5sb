@@ -41,12 +41,12 @@
         android:layout_width="130dp"
         android:layout_height="50dp"
         android:layout_marginStart="44dp"
-        android:layout_marginBottom="248dp"
+        android:layout_marginBottom="152dp"
         android:onClick="button_press"
         android:text="Train"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/auth_button"
-        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintHorizontal_bias="0.722"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -69,10 +69,9 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/train_button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.474"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/user_name"
-        app:layout_constraintVertical_bias="0.615"
+        app:layout_constraintVertical_bias="0.445"
         tools:visibility="invisible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
