@@ -23,26 +23,27 @@ public class UserActivity extends AppCompatActivity {
     }
 
     public void button_press(View view){
-        String text;
+        Intent intent;
         String name;
-        text = ((Button) view).getText().toString();
         name = username.getText().toString();
         if(name.isEmpty() || name.trim().isEmpty()){
             error_msg.setVisibility(View.VISIBLE);
             return;
         }
-
-        // Train case
-        if(text.equals("Train")){
-            Intent intent = new Intent(this, TrainActivity.class);
-            intent.putExtra("USERNAME", name);
-            //getIntent().getStringExtra("USERNAME");
-            startActivity(intent);
+        switch(view.getId()){
+            case R.id.train_button:
+                intent = new Intent(this, TrainActivity.class);
+                intent.putExtra("USERNAME", name);
+                //getIntent().getStringExtra("USERNAME");
+                startActivity(intent);
+                break;
+            case R.id.auth_button:
+                intent = new Intent(this, PredictActivity.class);
+                intent.putExtra("USERNAME", name);
+                startActivity(intent);
+                break;
         }
-        // Authenticate case
-        else{
 
-        }
     }
 }
 

@@ -21,6 +21,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".TrainActivity" android:parentActivityName=".UserActivity"/>
+        <activity android:name=".PredictActivity" android:parentActivityName=".UserActivity"/>
     </application>
 
 </manifest>

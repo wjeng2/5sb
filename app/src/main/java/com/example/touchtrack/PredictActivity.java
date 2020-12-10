@@ -4,28 +4,22 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.DisplayMetrics;
-import android.util.Log;
 import android.view.VelocityTracker;
-
-import android.view.View;
 import android.widget.TextView;
 import android.view.MotionEvent;
 import android.widget.Toast;
 
 import com.example.touchtrack.model.SwipeData;
-import com.google.gson.*;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import java.io.IOException;
-import java.io.OutputStreamWriter;
 
-public class TrainActivity extends AppCompatActivity {
+public class PredictActivity extends AppCompatActivity {
 
     List<SwipeData> sdl = new ArrayList<SwipeData>();
 
-//    private TextView position = null;
+    private TextView result = null;
     private float x;
     private float y;
     private VelocityTracker mVelocityTracker = null;
@@ -34,17 +28,15 @@ public class TrainActivity extends AppCompatActivity {
     private int height;
     private int width;
 
-    Gson gson = new Gson();
-
     int swipeCount = 1;
     String direction = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_train);
+        setContentView(R.layout.activity_predict);
 
-//        position = (TextView) findViewById(R.id.position);
+        result = (TextView) findViewById(R.id.result);
         username = getIntent().getStringExtra("USERNAME");
 
         networkManager = NetworkManager.getInstance(getApplicationContext());
@@ -52,31 +44,6 @@ public class TrainActivity extends AppCompatActivity {
         getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
         height = displayMetrics.heightPixels;
         width = displayMetrics.widthPixels;
-    }
-
-    public void train_button(View view){
-        switch(view.getId()){
-            case R.id.start_training_button:
-                // network request
-                networkManager.train(username, new NetworkManager.OnTrainListener() {
-                    @Override
-                    public void onSuccess() {
-                        Toast.makeText(getApplicationContext(), "Successfully start training!" , Toast.LENGTH_SHORT).show();
-                    }
-
-                    @Override
-                    public void onNetworkFail() {
-                        Toast.makeText(getApplicationContext(), "Training network error!" , Toast.LENGTH_SHORT).show();
-                    }
-
-                    @Override
-                    public void onFail() {
-                        Toast.makeText(getApplicationContext(), "Training fail!" , Toast.LENGTH_SHORT).show();
-                    }
-                });
-                break;
-        }
-
     }
 
 
@@ -102,15 +69,6 @@ public class TrainActivity extends AppCompatActivity {
                 }
 
                 mVelocityTracker.addMovement(event);
-//                position.setText("Time: " + Long.toString(ms));
-//                position.append("\nName: " + username);
-//                position.append("\nX: " + x + " Y: " + y);
-//                position.append("\nPressure: " + pressure);
-//                position.append("\nSize: " + touch_size);
-//                position.append("\nX original: " + x);
-//                position.append("\nY original: " + y);
-//                position.append("step no. " + swipeCount);
-
 
                 SwipeData ss = new SwipeData(ms, x, y, touch_size, pressure, 0, 0, "null");
                 sdl.add(ss);
@@ -127,16 +85,6 @@ public class TrainActivity extends AppCompatActivity {
 
                 mVelocityTracker.addMovement(event);
                 mVelocityTracker.computeCurrentVelocity(100);
-//                position.setText("Time: " + ms);
-//                position.setText("\nName: "+ username);
-//                position.append("\nX: " + newX + " Y: " + newY);
-//                position.append("\nPressure: " + pressure);
-//                position.append("\nSize: " + touch_size);
-//                position.append("\nX velocity: " + vx);
-//                position.append("\nY velocity: " + vy);
-//                position.append("\nX original: " + x);
-//                position.append("\nY original: " + y);
-//                position.append("\nstep no. " + swipeCount);
 
                 //Predicting Direction
                 direction = "null";
@@ -158,7 +106,7 @@ public class TrainActivity extends AppCompatActivity {
                 } else {
                     direction = "null";
                 }
-//                position.append("\nPredicted direction: " + direction);
+
                 x = newX;
                 y = newY;
                 SwipeData sd = new SwipeData(ms, newX, newY, touch_size, pressure, vx, vy, direction);
@@ -169,10 +117,7 @@ public class TrainActivity extends AppCompatActivity {
             case MotionEvent.ACTION_UP:
                 mVelocityTracker.recycle();
                 mVelocityTracker = null;
-                String sdl_json_str = gson.toJson(sdl);
 
-//                position.setText("");
-                ms = System.currentTimeMillis();
                 switch (swipeCount){
                     case 1 :
                     case 2 :
@@ -180,29 +125,21 @@ public class TrainActivity extends AppCompatActivity {
                         swipeCount ++;
                         break;
                     case 4 :
-                        try {
-                            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(openFileOutput("swipe" + ms + ".json", MODE_APPEND));
-                            outputStreamWriter.write(sdl_json_str + "\n");
-                            outputStreamWriter.close();
-                        } catch (IOException e) {
-                            Log.e("Exception", "File write failed: " + e.toString());
-                        }
-
                         // network request
-                        networkManager.sendData(username, new ArrayList<SwipeData>(sdl), width, height, new NetworkManager.OnSendDataListener() {
+                        networkManager.predict(username, new ArrayList<SwipeData>(sdl), width, height, new NetworkManager.OnPredictListener() {
                             @Override
                             public void onSuccess() {
-                                Toast.makeText(getApplicationContext(), "Successfully send a data!" , Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "Successfully send predict!" , Toast.LENGTH_SHORT).show();
                             }
 
                             @Override
                             public void onNetworkFail() {
-                                Toast.makeText(getApplicationContext(), "Send network error!" , Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "predict network error!" , Toast.LENGTH_SHORT).show();
                             }
 
                             @Override
                             public void onFail() {
-                                Toast.makeText(getApplicationContext(), "Send fail!" , Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "predict fail!" , Toast.LENGTH_SHORT).show();
                             }
                         });
 
@@ -216,12 +153,7 @@ public class TrainActivity extends AppCompatActivity {
             case MotionEvent.ACTION_CANCEL:
                 mVelocityTracker.recycle();
                 mVelocityTracker = null;
-//                position.setText("");
         }
         return true;
     }
-
-
-
-
 }
