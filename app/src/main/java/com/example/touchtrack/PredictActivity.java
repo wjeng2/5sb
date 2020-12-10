@@ -128,8 +128,12 @@ public class PredictActivity extends AppCompatActivity {
                         // network request
                         networkManager.predict(username, new ArrayList<SwipeData>(sdl), width, height, new NetworkManager.OnPredictListener() {
                             @Override
-                            public void onSuccess() {
-                                Toast.makeText(getApplicationContext(), "Successfully send predict!" , Toast.LENGTH_SHORT).show();
+                            public void onSuccess(boolean result) {
+                                if (result) {
+                                    Toast.makeText(getApplicationContext(), "you are the authentic user!" , Toast.LENGTH_SHORT).show();
+                                } else {
+                                    Toast.makeText(getApplicationContext(), "you are noy the authentic user!" , Toast.LENGTH_SHORT).show();
+                                }
                             }
 
                             @Override

@@ -30,7 +30,7 @@ public class NetworkManager {
     private static NetworkManager sInstance;
     private static Context mContext;
     private static RequestQueue requestQueue;
-    private static final String serverUrl = "http://192.168.50.251:5002";
+    private static final String serverUrl = "http://shenjianan97.link:5002";
     private static final String sendDataPath = "senddata";
     private static final String trainPath = "train";
     private static final String predictPath = "predict";
@@ -63,7 +63,7 @@ public class NetworkManager {
     }
 
     public interface OnPredictListener {
-        void onSuccess();
+        void onSuccess(boolean result);
 
         void onNetworkFail();
 
@@ -169,7 +169,8 @@ public class NetworkManager {
                     @Override
                     public void onResponse(JSONObject response) {
                         Log.d(TAG, "predict response" + response.toString());
-                        l.onSuccess();
+                        boolean result = response.optBoolean("result");
+                        l.onSuccess(result);
                     }
                 }, new Response.ErrorListener() {
             @Override
