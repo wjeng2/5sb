@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.MaskFilter;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.VelocityTracker;
 import android.widget.TextView;
@@ -29,6 +30,8 @@ public class TrainActivity extends AppCompatActivity {
     private VelocityTracker mVelocityTracker = null;
     private String username;
     private NetworkManager networkManager;
+    private int height;
+    private int width;
 
     //https://stackoverflow.com/questions/16650419/draw-in-canvas-by-finger-android
 //    private MyView mv;
@@ -48,7 +51,12 @@ public class TrainActivity extends AppCompatActivity {
 
         position = (TextView) findViewById(R.id.position);
         username = getIntent().getStringExtra("USERNAME");
+
         networkManager = NetworkManager.getInstance(getApplicationContext());
+        DisplayMetrics displayMetrics = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+        height = displayMetrics.heightPixels;
+        width = displayMetrics.widthPixels;
     }
 
 
@@ -163,7 +171,7 @@ public class TrainActivity extends AppCompatActivity {
                         }
 
                         // network request
-                        networkManager.sendData(username, new ArrayList<SwipeData>(sdl), new NetworkManager.OnSendDataListener() {
+                        networkManager.sendData(username, new ArrayList<SwipeData>(sdl), width, height, new NetworkManager.OnSendDataListener() {
                             @Override
                             public void onSuccess() {
                                 Toast.makeText(getApplicationContext(), "Successfully send a data!" , Toast.LENGTH_SHORT).show();
